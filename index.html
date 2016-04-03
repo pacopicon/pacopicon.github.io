@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300|Special+Elite|Monoton|Montserrat:400,700|Josefin+Sans|Quicksand|Fredoka+One|Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="scripts/jquery.waypoints.min.js"></script>
+        <!-- <script src="scripts/sticky.min.js"></script> -->
+        <script src="scripts/my.sticky.js"></script>
+        <script src="scripts/my.waypoints.js"></script>
+        <script src="scripts/app.js"></script>
+    </head>
+    <body class="landing">
+        <div id="top"></div>
+        <div class="navbar_wrapper">
+            <nav class="navbar">
+                <div id="home-link">
+                    <a href="#top" class="home-button">paco|picon</a>
+                </div>
+                <ul class="inline-list centered nav">
+                    <li id="menu-projects">
+                        <a href="#wrapper-one" class="unhighlighted" id="linkOne">projects</a>
+                    </li>
+                    <li id="menu-about">
+                        <a href="#wrapper-two" class="unhighlighted" id="linkTwo">about me</a>
+                    </li>
+                    <li id="menu-blog">
+                        <a href="#wrapper-three" class="unhighlighted" id="linkThree">blog</a>
+                    </li>
+                    <li id="menu-contact">
+                        <a href="#wrapper-four" class="unhighlighted" id="linkFour">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+<!--    Wrapper around content at ~90% width and max-width: ~1200px-->
+<!--Look at Blocjams scrolling functionaliy. Event listener for scroll direction down/up and distance that translates to changing colors and applying to css-->
+<!--         parralax scroll to move scrolls at different speeds-->
+<!--         have size of background be based on size of screen OR center the backround-->
+<!-- mouse-over-activated pop-up texts with high opacity explaining projects-->
+        <div class="content">
+            <div class="absolute-center fullscreen-video-responsive">
+                <video loop muted autoplay class="fullscreen-video__video">
+                    <source src="assets/videos/rotatingEarth.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div id="wrapper-one" class="wrapper">
+                    <div class="waypoint_border" id="topOne">
+                        <a href="#top" class="ion-arrow-up-b"></a>
+                    </div>
+                    <div id="projects">
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div id="wrapper-two" class="wrapper">
+                    <div class="waypoint_border" id="topTwo">
+                        <a href="#top" class="ion-arrow-up-b"></a>
+                    </div>
+                    <div id="about-me">
+                        <p>about me</p>
+                    </div>  
+                    <div class="timeline">
+                        <a class="twitter-timeline" href="https://twitter.com/_____paco_____" data-widget-id="713355353648291840">Tweets by @_____paco_____</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div>
+                    <div class="twitter-share">
+                        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)          [0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        <a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false">Follow @twitter</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </div>
+                        <div id="fb-root"></div>
+                            <script>(function(d, s, id) {
+                              var js, fjs = d.getElementsByTagName(s)[0];
+                              if (d.getElementById(id)) return;
+                              js = d.createElement(s); js.id = id;
+                              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                              fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-follow" data-href="https://www.facebook.com/paco.picon.39" data-layout="standard" data-show-faces="true"></div>
+                    </div>
+                    <div id="wrapper-three" class="wrapper">
+                        <div class="waypoint_border" id="topThree">
+                            <a href="#top" class="ion-arrow-up-b"></a>
+                        </div>
+                        <div id="blog">
+                            <h3>March 16, 2016</h3>
+                            <p>The more I code and the more I design, the more I realize that the things that I am drawn to in a website have to do with both simplicity of design and responsiveness.  What I have found out is that the more effortlessly intuitive the user experience, the greater the complexity of code.</p>
+
+                            <h3>March 22, 2016</h3>
+                            <p>Work in progress log: At this point in the process of developing the present webpage, all of the basic elements seem to be present: it was designed to be a one-pager, so all of the necessary html is present.  It was designed to have the foundations of user-responsiveness and so we see such javascript elements as (1) the automatic scroll feature, (2) the navbar mouseover feature, and (3) the navbar navigational highlighting feature.  It was designed with the looping video back-drop in mind (a feature very much in vogue currently). Some crucial things are still missing, such as the contact form and the links to my other app-projects along with their case studies.<br><br>  Nevertheless, as a webpage, the present project is nearing completion.  And that is why I now turn to the finer details; things like font choice and wrapper-color choice.  The color of the wrapper against which you read the present text used to be brown.  This text used to be in <span style="font-family='Sue Ellen Francisco', cursive; 'font-color: black'">Sue ellen Francisco</span> </p>
+                        </div> 
+                    </div>
+                    <div id="wrapper-four" class="wrapper">
+                        <div class="waypoint_border" id="topFour">
+                            <a href="#top" class="ion-arrow-up-b"></a>
+                        </div>
+                        <div id="contact">
+                            <p>contact</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
