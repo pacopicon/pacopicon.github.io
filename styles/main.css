@@ -172,32 +172,34 @@ ul.nav li a:hover {
 */
 
 .container {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 193%;
     margin-bottom: 50%;
     height: 1380px;
 }
 
-.container p, h1, h2, h3 {
-    margin-left: 15px;
+.container p, h1, h2, h3, .timeline, .share-buttons, .contact-form {
+    color: black;
+    margin-left: 120px;
+    margin-right: 100px;
     margin-top: 15px;
+}
+
+.wrapper p {
+    padding-top: 55px;
+    font-size: 30px;
 }
 
 .wrapper {
     height: 70%;
+    width: 100%;
+/*    max-width: 2200px;*/
     margin-bottom: 50%;
-    margin-left: 5%;
-    margin-right: 5%;
     z-index: 400;
 }
 
-.wrapper p {
-    color: black;
-    margin-left: 150px;
-    margin-right: 150px;
-    padding-top: 55px;
-    font-size: 30px;
-}
 #wrapper-one {
     background-color: white;
 }
@@ -237,39 +239,29 @@ ul.nav li a:hover {
 .timeline {
     position: absolute;
     bottom: 30px;
-    margin-left: 150px;
 }
 
-.twitter-timeline {
-}
-
-.twitter-share {
+.share-buttons {
     position: absolute;
-    bottom: 0px;
-    margin-left: 150px;
-    margin-top: 500px;
+    top: 130px;
+    margin-left: 120px;
+}
+
+.twitter-share-button {
+/*    how to increase the size?*/
 }
 
 .fb-follow {
-    margin-left: 15px;
-    margin-top: 500px;
 }
 
 #wrapper-three {
     background-color: #99ffcc;
 }
 
-#wrapper-three h3 {
-    color:black;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
 #wrapper-three p {
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 900;
-    color: black;
     padding-top: 5px;
     font-size: 20px;
     line-height: 21px;
@@ -283,6 +275,24 @@ ul.nav li a:hover {
 #wrapper-four p {
     font-family: 'Montserrat', sans-serif; 
     color: black;
+}
+
+.contact-form {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 115px;
+    height: 500px;
+    width: 70%;
+}
+
+.contact-name, .contact-email, .contact-send-button {
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.contact-text {
+    height: 45px;
+    margin-bottom: 15px;
 }
 
  /* Medium and small screens (640px) */

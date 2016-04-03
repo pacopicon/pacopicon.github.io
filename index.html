@@ -1,9 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>portfolio</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300|Special+Elite|Monoton|Montserrat:400,700|Josefin+Sans|Quicksand|Fredoka+One|Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -37,7 +40,8 @@
                 </ul>
             </nav>
         </div>
-<!--    Wrapper around content at ~90% width and max-width: ~1200px-->
+<!--Optimize Portfolio website for mobile-->
+<!-- Wrapper around content at ~90% width and max-width: ~1200px-->
 <!--Look at Blocjams scrolling functionaliy. Event listener for scroll direction down/up and distance that translates to changing colors and applying to css-->
 <!--         parralax scroll to move scrolls at different speeds-->
 <!--         have size of background be based on size of screen OR center the backround-->
@@ -68,21 +72,21 @@
                         <a class="twitter-timeline" href="https://twitter.com/_____paco_____" data-widget-id="713355353648291840">Tweets by @_____paco_____</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
-                    <div class="twitter-share">
+                    <div class="share-buttons">
                         <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)          [0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                         <a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false">Follow @twitter</a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </div>
                         <div id="fb-root"></div>
-                            <script>(function(d, s, id) {
-                              var js, fjs = d.getElementsByTagName(s)[0];
-                              if (d.getElementById(id)) return;
-                              js = d.createElement(s); js.id = id;
-                              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-                              fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));</script>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
                         <div class="fb-follow" data-href="https://www.facebook.com/paco.picon.39" data-layout="standard" data-show-faces="true"></div>
+                        </div>
                     </div>
                     <div id="wrapper-three" class="wrapper">
                         <div class="waypoint_border" id="topThree">
@@ -100,8 +104,29 @@
                         <div class="waypoint_border" id="topFour">
                             <a href="#top" class="ion-arrow-up-b"></a>
                         </div>
+                        <div class="contact-form">
+                            <form action="https://getsimpleform.com/messages?form_api_token=aa0e7be6e7527036d97c490fb5ad9c64" method="post">
+                                <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+                                <input type='hidden' name='redirect_to' value='https://pacopicon.github.io/thank-you.html/' />
+                                <!-- all your input fields here.... -->
+                                <div class="contact-fields">
+                                    <div class="contact-name">
+                                        <input type='text' name='name' placeholder='Your Full Name' />
+                                    </div>
+                                    <div class="contact-email">
+                                        <input type='email' name='email' placeholder='Your E-mail Address' />
+                                    </div>
+                                    <div class="contact-text">
+                                        <textarea name='message' placeholder='Write your message ...'></textarea>
+                                    </div>
+                                    <div class="contact-send-button">
+                                        <input type='submit' value='Send Message' />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                         <div id="contact">
-                            <p>contact</p>
+                            <p>contact:</p>
                         </div>
                     </div>
                 </div>
