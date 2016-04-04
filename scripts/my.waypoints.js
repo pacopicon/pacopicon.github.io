@@ -1,103 +1,8 @@
 $(window).load(function() {
-    // wrapperOneHighlight = new Waypoint({
-    //     element: $('#wrapper-one'),
-    //     handler: function(direction) {
-    //       if (direction == 'down') {
-    //         $("#linkOne").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //         $("#linkOne").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       } else {
-    //         $('li').children().css({"color": "black"});
-    //         $('li').children().css({"background-color": "white"});
-    //       };
-    //     }, offset: '74px'});
-    //
-    // wrapperTwoHighlight = new Waypoint({
-    //     element: $('#wrapper-two'),
-    //     handler: function(direction) {
-    //       if (direction == 'down') {
-    //         $("#linkTwo").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //         $("#linkTwo").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       } else {
-    //         $('li').children().css({"color": "black"});
-    //         $('li').children().css({"background-color": "white"});
-    //       };
-    //     }, offset: '74px'});
-    //
-    // wrapperThreeHighlight = new Waypoint({
-    //     element: $('#wrapper-three'),
-    //     handler: function(direction) {
-    //       if (direction == 'down') {
-    //         $("#linkThree").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //         $("#linkThree").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       } else {
-    //         $('li').children().css({"color": "black"});
-    //         $('li').children().css({"background-color": "white"});
-    //       };
-    //     }, offset: '74px'});
-    //
-    // wrapperFourHighlight = new Waypoint({
-    //     element: $('#wrapper-four'),
-    //     handler: function(direction) {
-    //       if (direction == 'down') {
-    //         $("#linkFour").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //         $("#linkFour").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       } else {
-    //         $('li').children().css({"color": "black"});
-    //         $('li').children().css({"background-color": "white"});
-    //       };
-    //     }, offset: '74px'});
-    //
-    // wrapperOneHighlightDeleteDown = new Waypoint({
-    //   element: $('#topOne'),
-    //   handler: function(direction) {
-    //     if (direction == 'down') {
-    //       $('li').children().css({"color": "black"});
-    //       $('li').children().css({"background-color": "white"});
-    //     } else {
-    //       $("#linkOne").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       $("#linkOne").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //     };
-    //   }, offset: '74px'});
-    //
-    // wrapperTwoHighlightDeleteDown = new Waypoint({
-    //   element: $('#topTwo'),
-    //   handler: function(direction) {
-    //     if (direction == 'down') {
-    //       $('li').children().css({"color": "black"});
-    //       $('li').children().css({"background-color": "white"});
-    //     } else {
-    //       $("#linkTwo").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       $("#linkTwo").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //     };
-    //   }, offset: '74px'});
-    //
-    // wrapperThreeHighlightDeleteDown = new Waypoint({
-    //   element: $('#topThree'),
-    //   handler: function(direction) {
-    //     if (direction == 'down') {
-    //       $('li').children().css({"color": "black"});
-    //       $('li').children().css({"background-color": "white"});
-    //     } else {
-    //       $("#linkThree").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       $("#linkThree").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //     };
-    //   }, offset: '74px'});
-    //
-    // wrapperFourHighlightDeleteDown = new Waypoint({
-    //   element: $('#topFour'),
-    //   handler: function(direction) {
-    //     if (direction == 'down') {
-    //       $('li').children().css({"color": "black"});
-    //       $('li').children().css({"background-color": "white"});
-    //     } else {
-    //       $("#linkFour").css({"color": "white", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 1s ease-in-out", "transition": "color 1s ease-in-out"});
-    //       $("#linkFour").css({"background-color": "black", "-webkit-transition": "color 1s ease-in-out", "-moz-transition": "color 1s ease-in-out", "-o-transition": "color 2s ease-in-out", "transition": "color 1s ease-in-out"});
-    //     };
-    //   }, offset: '74px'});
-
-      wrapperOneHighlight = new Waypoint({
-          element: $('#wrapper-one'),
-          handler: function(direction) {
+    
+    wrapperOneHighlight = new Waypoint({
+        element: $('#wrapper-one'),
+        handler: function(direction) {
             if (direction == 'down') {
               $("#linkOne").addClass('highlight');
               $("#linkOne").removeClass('unhighlighted');
@@ -105,11 +10,11 @@ $(window).load(function() {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-          }, offset: '74px'});
+        }, offset: '100px'});
 
       wrapperTwoHighlight = new Waypoint({
-          element: $('#wrapper-two'),
-          handler: function(direction) {
+        element: $('#wrapper-two'),
+        handler: function(direction) {
             if (direction == 'down') {
               $("#linkTwo").addClass('highlight');
               $("#linkTwo").removeClass('unhighlighted');
@@ -117,11 +22,11 @@ $(window).load(function() {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-          }, offset: '74px'});
+        }, offset: '100px'});
 
       wrapperThreeHighlight = new Waypoint({
-          element: $('#wrapper-three'),
-          handler: function(direction) {
+        element: $('#wrapper-three'),
+        handler: function(direction) {
             if (direction == 'down') {
               $("#linkThree").addClass('highlight');
               $("#linkThree").removeClass('unhighlighted');
@@ -129,11 +34,11 @@ $(window).load(function() {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-          }, offset: '74px'});
+        }, offset: '100px'});
 
       wrapperFourHighlight = new Waypoint({
-          element: $('#wrapper-four'),
-          handler: function(direction) {
+        element: $('#wrapper-four'),
+        handler: function(direction) {
             if (direction == 'down') {
               $("#linkFour").addClass('highlight');
               $("#linkFour").removeClass('unhighlighted');
@@ -141,7 +46,7 @@ $(window).load(function() {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-          }, offset: '74px'});
+        }, offset: '100px'});
 
       wrapperOneHighlightDeleteDown = new Waypoint({
         element: $('#topOne'),
@@ -153,7 +58,7 @@ $(window).load(function() {
             $("#linkOne").addClass('highlight');
             $("#linkOne").removeClass('unhighlighted');
           };
-        }, offset: '74px'});
+        }, offset: '100px'});
 
       wrapperTwoHighlightDeleteDown = new Waypoint({
         element: $('#topTwo'),
@@ -165,7 +70,7 @@ $(window).load(function() {
             $("#linkTwo").addClass('highlight');
             $("#linkTwo").removeClass('unhighlighted');
           };
-        }, offset: '74px'});
+        }, offset: '100px'});
 
       wrapperThreeHighlightDeleteDown = new Waypoint({
         element: $('#topThree'),
@@ -177,7 +82,7 @@ $(window).load(function() {
             $("#linkThree").addClass('highlight');
             $("#linkThree").removeClass('unhighlighted');
           };
-        }, offset: '74px'});
+        }, offset: '100px'});
 
       wrapperFourHighlightDeleteDown = new Waypoint({
         element: $('#topFour'),
@@ -189,7 +94,7 @@ $(window).load(function() {
             $("#linkFour").addClass('highlight');
             $("#linkFour").removeClass('unhighlighted');
           };
-        }, offset: '74px'});
+        }, offset: '100px'});
 });
 
 // Juke's example:

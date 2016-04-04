@@ -1,52 +1,61 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
-    <head>
-        <title>portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300|Special+Elite|Monoton|Montserrat:400,700|Josefin+Sans|Quicksand|Fredoka+One|Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-        <script src="scripts/jquery.waypoints.min.js"></script>
-        <!-- <script src="scripts/sticky.min.js"></script> -->
-        <script src="scripts/my.sticky.js"></script>
-        <script src="scripts/my.waypoints.js"></script>
-        <script src="scripts/app.js"></script>
-    </head>
+    <meta charset="utf-8">
+    <title>paco picon</title>
+        
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:700,400,300|Special+Elite|Monoton|Montserrat:400,700|Josefin+Sans|Quicksand|Fredoka+One|Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+    <!--link to Bootstrap is commented out below-->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <!--A Bootstrap customization is linked below-->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap-theme.min.css">
+    <!--ionicicons-->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script type='text/javascript' src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type='text/javascript' src="scripts/jquery.waypoints.min.js"></script>
+    <script type='text/javascript' src="scripts/my.sticky.js"></script>
+    <!--<script type='text/javascript' src="scripts/sticky.min.js"></script>-->
+    <script type='text/javascript' src="scripts/my.waypoints.js"></script>
+    <script type='text/javascript' src="scripts/app.js"></script>
+    <!-- Bootstrap JS -->
+    <script type='text/javascript' src="styles/bootstrap/js/bootstrap.min.js"></script>
+                
     <body class="landing">
         <div id="top"></div>
-        <div class="navbar_wrapper">
-            <nav class="navbar">
-                <div id="home-link">
-                    <a href="#top" class="home-button">paco|picon</a>
-                </div>
-                <ul class="inline-list centered nav">
-                    <li id="menu-projects">
-                        <a href="#wrapper-one" class="unhighlighted" id="linkOne">projects</a>
-                    </li>
-                    <li id="menu-about">
-                        <a href="#wrapper-two" class="unhighlighted" id="linkTwo">about me</a>
-                    </li>
-                    <li id="menu-blog">
-                        <a href="#wrapper-three" class="unhighlighted" id="linkThree">blog</a>
-                    </li>
-                    <li id="menu-contact">
-                        <a href="#wrapper-four" class="unhighlighted" id="linkFour">contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div id="home-link">
+                <a href="#top" class="home-button">paco|picon</a>
+            </div>
+            <ul class="nav-buttons">
+                <li id="menu-projects">
+                    <a href="#wrapper-one" class="unhighlighted" id="linkOne">projects</a>
+                </li>
+                <li id="menu-about">
+                    <a href="#wrapper-two" class="unhighlighted" id="linkTwo">about me</a>
+                </li>
+                <li id="menu-blog">
+                    <a href="#wrapper-three" class="unhighlighted" id="linkThree">blog</a>
+                </li>
+                <li id="menu-contact">
+                    <a href="#wrapper-four" class="unhighlighted" id="linkFour">contact</a>
+                </li>
+            </ul>
+        </nav>
 <!--Optimize Portfolio website for mobile-->
 <!-- Wrapper around content at ~90% width and max-width: ~1200px-->
 <!--Look at Blocjams scrolling functionaliy. Event listener for scroll direction down/up and distance that translates to changing colors and applying to css-->
 <!--         parralax scroll to move scrolls at different speeds-->
 <!--         have size of background be based on size of screen OR center the backround-->
 <!-- mouse-over-activated pop-up texts with high opacity explaining projects-->
-        <div class="content">
+        <section>
             <div class="absolute-center fullscreen-video-responsive">
                 <video loop muted autoplay class="fullscreen-video__video">
                     <source src="assets/videos/rotatingEarth.mp4" type="video/mp4">
@@ -104,33 +113,32 @@
                         <div class="waypoint_border" id="topFour">
                             <a href="#top" class="ion-arrow-up-b"></a>
                         </div>
-                        <div class="contact-form">
-                            <form action="https://getsimpleform.com/messages?form_api_token=aa0e7be6e7527036d97c490fb5ad9c64" method="post">
-                                <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-                                <input type='hidden' name='redirect_to' value='https://pacopicon.github.io/thank-you.html/' />
-                                <!-- all your input fields here.... -->
-                                <div class="contact-fields">
-                                    <div class="contact-name">
-                                        <input type='text' name='name' placeholder='Your Full Name' />
-                                    </div>
-                                    <div class="contact-email">
-                                        <input type='email' name='email' placeholder='Your E-mail Address' />
-                                    </div>
-                                    <div class="contact-text">
-                                        <textarea name='message' placeholder='Write your message ...'></textarea>
-                                    </div>
-                                    <div class="contact-send-button">
-                                        <input type='submit' value='Send Message' />
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
                         <div id="contact">
                             <p>contact:</p>
                         </div>
+                        <div class="contact-form">
+                            <form action="https://getsimpleform.com/messages?form_api_token=aa0e7be6e7527036d97c490fb5ad9c64" method="post">
+                                    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+                                    <input type='hidden' name='redirect_to' value='https://pacopicon.github.io/thank-you.html/' />
+                                    <!-- all your input fields here.... -->
+                                    <div class="contact-fields">
+                                        <div class="form-group">
+                                            <input type='text' class="form-control" name='name' placeholder='name' />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type='email' class="form-control" name='email' placeholder='email' />
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" name='message' placeholder='message ...'></textarea>
+                                        </div>
+                                        <div class="contact-send-button">
+                                            <button type='submit' class="btn btn-default">send message</button>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
     </body>
 </html>

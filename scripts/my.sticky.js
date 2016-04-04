@@ -12,13 +12,13 @@
 //    });
 
 $(window).load(function() {
-    $('.navbar_wrapper').waypoint(function (direction) {
+    $('nav').waypoint(function (direction) {
         if (direction == 'down') {
-            $('.navbar_wrapper').addClass('fixed-nav');
-            $('.content').css({ 'margin-top': 90 });
+            $('nav').addClass('fixed-nav');
+            $('section').css({ 'margin-top': 90 });
         } else if (direction == 'up') {
-            $('.navbar_wrapper').removeClass('fixed-nav');
-            $('.content').css({ 'margin-top': 30 });
+            $('nav').removeClass('fixed-nav');
+            $('section').css({ 'margin-top': 30 });
         }
     });
 });
