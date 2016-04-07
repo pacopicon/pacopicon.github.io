@@ -110,10 +110,22 @@ ul.nav-buttons li a {
     margin-left: 0%;
 }
 
-@media (max-width:321px) {
+@media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        
     html {
         height: 100%;
         width: 95%;
+    }
+    
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
     
     nav {
@@ -129,7 +141,8 @@ ul.nav-buttons li a {
     
     #home link {
         align-content: center;
-        margin: auto 0;
+        left: 0;
+        right: 0;
     }
     
     #home-link a {
