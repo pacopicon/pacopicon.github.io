@@ -23,13 +23,6 @@ body {
     position: absolute;
 }
 
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 .unhighlighted {
     color: black;
     background-color: white;
@@ -46,6 +39,14 @@ body {
     -moz-transition: color 1s ease-in-out;
     -o-transition: color 1s ease-in-out;
     transition: color 1s ease-in-out;
+}
+
+/* Nav Elements */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 nav {
@@ -110,6 +111,8 @@ ul.nav-buttons li a {
     margin-left: 0%;
 }
 
+/* Media Queries */
+
 @media only screen 
     and (min-device-width: 320px)
     and (max-device-width: 568px)
@@ -130,13 +133,14 @@ ul.nav-buttons li a {
     
     nav {
         height: 100px;
-        width: 100%;
-        top: 70%;
+        width: 150%;
+        top: 78%;
     }
     
     .nav-buttons {
         display: block;
         float: none;
+        height: 100px;
     }
     
     #home link {
@@ -146,11 +150,12 @@ ul.nav-buttons li a {
     }
     
     #home-link a {
-        line-height: 20px;
+        line-height: 15px;
         font-size: 30px;
     }
     
     ul.nav-buttons li a {
+        line-height: 15px;
         font-size: 20px;
         padding-top: 0%;
         padding-bottom: 0%;
