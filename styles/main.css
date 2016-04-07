@@ -117,7 +117,8 @@ ul.nav-buttons li a {
     }
     
     nav {
-        height: 150px;
+        height: 100px;
+        width: 100%;
         top: 70%;
     }
     
@@ -128,6 +129,7 @@ ul.nav-buttons li a {
     
     #home link {
         align-content: center;
+        margin: auto 0;
     }
     
     #home-link a {
@@ -136,7 +138,7 @@ ul.nav-buttons li a {
     }
     
     ul.nav-buttons li a {
-        font-size: 15px;
+        font-size: 20px;
         padding-top: 0%;
         padding-bottom: 0%;
         
