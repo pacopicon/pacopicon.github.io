@@ -113,11 +113,7 @@ ul.nav-buttons li a {
 
 /* Media Queries */
 
-@media only screen 
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) {
+@media (max-width: 614px) {
         
     html {
         height: 100%;
@@ -132,9 +128,9 @@ ul.nav-buttons li a {
     }
     
     nav {
-        height: 100px;
+        height: 120px;
         width: 150%;
-        top: 78%;
+        top: 128%;
     }
     
     .nav-buttons {
@@ -143,28 +139,35 @@ ul.nav-buttons li a {
         height: 100px;
     }
     
-    #home link {
-        align-content: center;
-        left: 0;
-        right: 0;
+    #home-link {
+        width: 100%;
+        margin-left: 2;
+        margin-right: 2;
     }
     
     #home-link a {
-        line-height: 15px;
+        line-height: 30px;
         font-size: 30px;
+        letter-spacing: 20px;
+        margin-left: 0;
     }
     
     ul.nav-buttons li a {
-        line-height: 15px;
-        font-size: 20px;
+        line-height: 30px;
+        font-size: 30px;
         padding-top: 0%;
-        padding-bottom: 0%;  
+        padding-bottom: 0%; 
+        padding-left: 55x;
+        padding-right: 55px;
     }
     
     li {
-        display: block;
         padding-top: 0%;
     }
+        
+        .container {
+            margin-top: 150px;
+        }
 }
 
 @media (max-width:640px) {
