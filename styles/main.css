@@ -120,23 +120,14 @@ ul.nav-buttons li a {
         width: 95%;
     }
     
-    .fixed-nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    
     nav {
         height: 120px;
-        width: 150%;
-        top: 128%;
     }
     
     .nav-buttons {
-        display: block;
         float: none;
         height: 100px;
+        min-width: 100%;
     }
     
     #home-link {
@@ -156,9 +147,18 @@ ul.nav-buttons li a {
         line-height: 30px;
         font-size: 30px;
         padding-top: 0%;
-        padding-bottom: 0%; 
-        padding-left: 55x;
-        padding-right: 55px;
+        padding-bottom: 0%;
+        margin-right: 7%;
+        
+    }
+    
+    /*
+#wrapper-one p:nth-child(2) {
+    
+}
+*/
+    ul.nav-buttons li:nth-child(3) {
+        margin-right: 15.5%;
     }
     
     li {
