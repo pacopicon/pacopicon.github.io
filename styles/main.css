@@ -117,17 +117,27 @@ ul.nav-buttons li a {
         
     html {
         height: 100%;
-        width: 95%;
+        width: 100%;
+    }
+    
+    body {
+        width: 100%;
+    }
+    
+    .fixed-nav {
+        width: 400px;
     }
     
     nav {
         height: 120px;
+        width: 400px;
     }
     
     .nav-buttons {
         float: none;
         height: 100px;
         min-width: 100%;
+        max-width: 100%;
     }
     
     #home-link {
