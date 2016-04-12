@@ -164,8 +164,10 @@ ul.nav-buttons li a {
     }
 
     .masthead {
+        width: 95%;
         font-size: 30px;
         text-decoration: none;
+        margin: 0;
     }
 
     ul.nav-buttons li a {
