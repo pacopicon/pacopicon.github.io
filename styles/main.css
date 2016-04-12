@@ -117,7 +117,7 @@ ul.nav-buttons li a {
 
 /* Media Queries */
 
-@media (max-width: 654px) {
+@media (max-width: 700px) {
 
     html, body {
         height: 100%;
