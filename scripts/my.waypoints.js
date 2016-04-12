@@ -1,4 +1,30 @@
-$(window).load(function() {
+// Masthead letter-stretch function
+
+$.fn.letterStretch = function(){
+    var element       = $(this),
+        contentWidth  = element.width(),
+        text          = element.text(),
+        line          = $('<span class="stretchIt">' + text + '</span>'),
+        numberChar    = element.text().length,
+        spacing       = contentWidth / numberChar,
+        textWidth;
+
+    element.html(line);
+    textWidth = line.width();
+
+    if (textWidth < contentWidth){
+        var  charWidth     = textWidth/numberChar,
+             letterSpacing = spacing - charWidth + (spacing - charWidth) / numberChar; 
+
+        line.css({'letter-spacing': letterSpacing});
+    } else {
+        line.contents().unwrap();
+        element.addClass('justify');
+    }
+};
+
+//$(window).load(function() {
+$(document).ready(function() {
     
     wrapperOneHighlight = new Waypoint({
         element: $('#wrapper-one'),
@@ -12,7 +38,7 @@ $(window).load(function() {
             };
         }, offset: '100px'});
 
-      wrapperTwoHighlight = new Waypoint({
+    wrapperTwoHighlight = new Waypoint({
         element: $('#wrapper-two'),
         handler: function(direction) {
             if (direction == 'down') {
@@ -24,7 +50,7 @@ $(window).load(function() {
             };
         }, offset: '100px'});
 
-      wrapperThreeHighlight = new Waypoint({
+    wrapperThreeHighlight = new Waypoint({
         element: $('#wrapper-three'),
         handler: function(direction) {
             if (direction == 'down') {
@@ -36,7 +62,7 @@ $(window).load(function() {
             };
         }, offset: '100px'});
 
-      wrapperFourHighlight = new Waypoint({
+    wrapperFourHighlight = new Waypoint({
         element: $('#wrapper-four'),
         handler: function(direction) {
             if (direction == 'down') {
@@ -48,7 +74,7 @@ $(window).load(function() {
             };
         }, offset: '100px'});
 
-      wrapperOneHighlightDeleteDown = new Waypoint({
+    wrapperOneHighlightDeleteDown = new Waypoint({
         element: $('#topOne'),
         handler: function(direction) {
           if (direction == 'down') {
@@ -60,7 +86,7 @@ $(window).load(function() {
           };
         }, offset: '100px'});
 
-      wrapperTwoHighlightDeleteDown = new Waypoint({
+    wrapperTwoHighlightDeleteDown = new Waypoint({
         element: $('#topTwo'),
         handler: function(direction) {
           if (direction == 'down') {
@@ -72,7 +98,7 @@ $(window).load(function() {
           };
         }, offset: '100px'});
 
-      wrapperThreeHighlightDeleteDown = new Waypoint({
+    wrapperThreeHighlightDeleteDown = new Waypoint({
         element: $('#topThree'),
         handler: function(direction) {
           if (direction == 'down') {
@@ -84,7 +110,7 @@ $(window).load(function() {
           };
         }, offset: '100px'});
 
-      wrapperFourHighlightDeleteDown = new Waypoint({
+    wrapperFourHighlightDeleteDown = new Waypoint({
         element: $('#topFour'),
         handler: function(direction) {
           if (direction == 'down') {
@@ -95,6 +121,12 @@ $(window).load(function() {
             $("#linkFour").removeClass('unhighlighted');
           };
         }, offset: '100px'});
+    
+    // Masthead letter stretch function
+    $('.masthead').letterStretch();
+    $(window).resize(function () {
+        $('.masthead').letterStretch();
+    });
 });
 
 // Juke's example:

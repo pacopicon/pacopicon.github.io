@@ -17,7 +17,7 @@ body {
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
     text-decoration: none;
  }
- 
+
 #top {
     top: 0;
     position: absolute;
@@ -72,12 +72,16 @@ nav {
 }
 
 #home-link a {
-    line-height: 27px;
-    color: black;
     text-decoration: none;
-    font-family: 'Comfortaa', cursive;
-    font-size: 45px;
-    margin-left: 25px;
+}
+
+.masthead {
+  line-height: 30px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  font-size: 45px;
+  margin-left: 25px;
 }
 
 .nav-buttons {
@@ -100,7 +104,7 @@ ul.nav-buttons li a {
     text-decoration: none;
     font-family: 'Fredoka One', cursive;
     font-size: 22px;
-    font-weight: 10;   
+    font-weight: 10;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 0%;
@@ -113,89 +117,102 @@ ul.nav-buttons li a {
 
 /* Media Queries */
 
-@media (max-width: 614px) {
-        
-    html {
+@media (max-width: 654px) {
+
+    html, body {
         height: 100%;
         width: 100%;
+        margin:0%;
     }
-    
-    body {
+
+    .fixed-nav {
         width: 100%;
     }
-    
-    .fixed-nav {
-        width: 400px;
-    }
-    
+
     nav {
         height: 120px;
-        width: 400px;
+        width: 100%;
     }
-    
+
     .nav-buttons {
         float: none;
         height: 100px;
         min-width: 100%;
         max-width: 100%;
     }
-    
+
     #home-link {
         width: 100%;
         margin-left: 2;
         margin-right: 2;
     }
-    
-    #home-link a {
-        line-height: 30px;
-        font-size: 30px;
-        letter-spacing: 24px;
-        margin-left: 0;
+
+    .home-button {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
     }
-    
+
+    .stretchIt {
+        white-space: nowrap;
+        width: 100%;
+        margin: 0;
+    }
+
+    #home-link a {
+        text-decoration: none;
+    }
+
+    .masthead {
+        font-size: 30px;
+        text-decoration: none;
+    }
+
     ul.nav-buttons li a {
         line-height: 30px;
         font-size: 30px;
         padding-top: 0%;
         padding-bottom: 0%;
         margin-right: 7%;
-        
+
     }
-    
+
     /*
 #wrapper-one p:nth-child(2) {
-    
+
 }
 */
+/*
     ul.nav-buttons li:nth-child(3) {
         margin-right: 15.5%;
     }
-    
+
+*/
     li {
         padding-top: 0%;
     }
-        
+
         .container {
             margin-top: 150px;
         }
 }
 
 @media (max-width:640px) {
-    
-    
+
+
     ul.nav-buttons li a {
-        
+
     }
 }
 
 
 @media (min-width:641px) {
     ul.nav-buttons li a {
-        
+
         margin-right: 0%;
         margin-left: 0%;
     }
-    
+
     .nav-buttons {
 /*
         min-width: 76%;
@@ -206,11 +223,11 @@ ul.nav-buttons li a {
 
 @media (min-width:850px) {
     ul.nav-buttons li a {
-        
+
         margin-right: 0%;
         margin-left: 0%;
     }
-    
+
     .nav-buttons {
 /*
         min-width: 86%;
@@ -221,11 +238,11 @@ ul.nav-buttons li a {
 
 @media (min-width:2000px) {
     ul.nav-buttons li a {
-        
+
         margin-right: 0%;
         margin-left: 0%;
     }
-    
+
     .nav-buttons {
 /*
         min-width: 86%;
@@ -270,7 +287,7 @@ ul.nav-buttons li a:hover {
 .fullscreen-video__video {
     margin: auto;
     width: 100%;
-    height: 100%;  
+    height: 100%;
 }
 
 section {
@@ -318,12 +335,12 @@ section {
 
 /*
 #wrapper-one p:nth-child(2) {
-    
+
 }
 */
 
 #wrapper-one p {
-    font-family: 'Sue ellen Francisco', cursive; 
+    font-family: 'Sue ellen Francisco', cursive;
 }
 
 .waypoint_border {
@@ -345,7 +362,7 @@ section {
 }
 
 #wrapper-two p {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .timeline {
@@ -381,11 +398,11 @@ section {
 
 #wrapper-four {
     background-color: #be90d5;
-    
+
 }
 
 #wrapper-four p {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     color: black;
 }
 
@@ -412,15 +429,15 @@ section {
 
  @media (min-width: 40rem) {
     html { font-size: 112%; }
-     
+
 /*
      .column {
          float: left;
          padding-left: 1rem;
          padding-right: 1rem;
      }
-     
-      
+
+
      .column.full { width: 100%; }
      .column.two-thirds { width: 66.7%; }
      .column.half { width: 50%; }
@@ -429,7 +446,7 @@ section {
      .column.flow-opposite { float: right; }
  }
 */
- 
+
  /* Large screens (1024px) */
 
  @media (min-width: 64rem) {
