@@ -129,6 +129,8 @@ ul.nav-buttons li a:hover {
     transition: color 0.1s ease-in-out;
 }
 
+/* section elements */
+
 .absolute-center {
     width: 10000px;
     height: 10000px;
@@ -156,8 +158,10 @@ ul.nav-buttons li a:hover {
 }
 
 section {
-    margin-top: 30px;
+    margin-top: 193%;
 }
+
+/* container elements */
 
 .container {
     width: 90%;
@@ -353,6 +357,10 @@ section {
     
     .fullscreen-video__video {
         display: none;
+    }
+    
+    .container {
+        
     }
     
 }
