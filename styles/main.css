@@ -115,211 +115,6 @@ ul.nav-buttons li a {
     margin-left: 0%;
 }
 
-/* Media Queries */
-
-@media (max-width: 700px) {
-
-    html, body {
-        height: 100%;
-        width: 100%;
-        margin:0%;
-    }
-
-    .fixed-nav {
-        width: 100%;
-    }
-
-    nav {
-        height: 120px;
-        width: 100%;
-    }
-
-    .nav-buttons {
-        float: none;
-        height: 100px;
-        min-width: 100%;
-        max-width: 100%;
-    }
-
-    #home-link {
-        width: 100%;
-        margin-left: 2;
-        margin-right: 2;
-    }
-
-    .home-button {
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0;
-    }
-
-    .stretchIt {
-        white-space: nowrap;
-        width: 100%;
-        margin: 0;
-    }
-
-    #home-link a {
-        text-decoration: none;
-    }
-
-    .masthead {
-        width: 95%;
-        font-size: 30px;
-        text-decoration: none;
-        margin: 0;
-    }
-
-    ul.nav-buttons li a {
-        line-height: 30px;
-        font-size: 30px;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        margin-left: 5%;
-        margin-right: 5%;
-
-    }
-
-    li {
-        padding-top: 0%;
-    }
-
-        .container {
-            margin-top: 150px;
-        }
-}
-
-/* Media Query for iphone 5 */
-
-@media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: portrait) {
-
-    html, body {
-        height: 100%;
-        width: 100%;
-        margin:0%;
-    }
-
-    .fixed-nav {
-        width: 100%;
-    }
-
-    nav {
-        height: 120px;
-        width: 100%;
-    }
-
-    .nav-buttons {
-        float: none;
-        height: 100px;
-        min-width: 100%;
-        max-width: 100%;
-    }
-
-    #home-link {
-        width: 100%;
-        margin-left: 2;
-        margin-right: 2;
-    }
-
-    .home-button {
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0;
-    }
-
-    .stretchIt {
-        white-space: nowrap;
-        width: 100%;
-        margin: 0;
-    }
-
-    #home-link a {
-        text-decoration: none;
-    }
-
-    .masthead {
-        width: 95%;
-        font-size: 30px;
-        text-decoration: none;
-        margin: 0;
-    }
-
-    ul.nav-buttons li a {
-        line-height: 30px;
-        font-size: 30px;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        margin-right: 7%;
-
-    }
-
-    li {
-        padding-top: 0%;
-    }
-
-        .container {
-            margin-top: 150px;
-        }
-}
-
-@media (max-width:640px) {
-
-
-    ul.nav-buttons li a {
-
-    }
-}
-
-
-@media (min-width:641px) {
-    ul.nav-buttons li a {
-
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-
-    .nav-buttons {
-/*
-        min-width: 76%;
-        max-width: 50%;
-*/
-    }
-}
-
-@media (min-width:850px) {
-    ul.nav-buttons li a {
-
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-
-    .nav-buttons {
-/*
-        min-width: 86%;
-        max-width: 50%;
-*/
-    }
-}
-
-@media (min-width:2000px) {
-    ul.nav-buttons li a {
-
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-
-    .nav-buttons {
-/*
-        min-width: 86%;
-        max-width: 50%;
-*/
-    }
-}
-
 li {
     display: inline;
     margin: 1px;
@@ -334,23 +129,18 @@ ul.nav-buttons li a:hover {
     transition: color 0.1s ease-in-out;
 }
 
-
 .absolute-center {
     width: 10000px;
     height: 10000px;
-    overflow: auto;
-    margin: auto;
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -500;
-}
-
-.fullscreen-video-responsive {
     min-width: 20%;
     max-width: 100%;
     min-height: 20%;
     max-height: 100%;
     overflow: auto;
+    margin: auto;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -500;
 }
 
 .fullscreen-video__video {
@@ -359,15 +149,15 @@ ul.nav-buttons li a:hover {
     height: 100%;
 }
 
+.fullscreen-gif {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
 section {
     margin-top: 30px;
 }
-
-/*
-.container {
-    top: 1px;
-}
-*/
 
 .container {
     width: 90%;
@@ -401,12 +191,6 @@ section {
 #wrapper-one {
     background-color: white;
 }
-
-/*
-#wrapper-one p:nth-child(2) {
-
-}
-*/
 
 #wrapper-one p {
     font-family: 'Sue ellen Francisco', cursive;
@@ -494,33 +278,94 @@ section {
     width: 250px;
 }
 
- /* Medium and small screens (640px) */
+ /* Media Queries small */
 
- @media (min-width: 40rem) {
-    html { font-size: 112%; }
+@media (max-width: 700px) {
 
-/*
-     .column {
-         float: left;
-         padding-left: 1rem;
-         padding-right: 1rem;
-     }
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin:0%;
+    }
 
+    .fixed-nav {
+        width: 100%;
+    }
 
-     .column.full { width: 100%; }
-     .column.two-thirds { width: 66.7%; }
-     .column.half { width: 50%; }
-     .column.third { width: 33.3%; }
-     .column.fourth { width: 25%; }
-     .column.flow-opposite { float: right; }
- }
-*/
+    nav {
+        height: 120px;
+        width: 100%;
+    }
 
- /* Large screens (1024px) */
+    .nav-buttons {
+        float: none;
+        height: 100px;
+        min-width: 100%;
+        max-width: 100%;
+    }
 
- @media (min-width: 64rem) {
-    html { font-size: 120%; }
- }
+    #home-link {
+        width: 100%;
+        margin-left: 2;
+        margin-right: 2;
+    }
+
+    .home-button {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+    }
+
+    .stretchIt {
+        white-space: nowrap;
+        width: 100%;
+        margin: 0;
+    }
+
+    #home-link a {
+        text-decoration: none;
+    }
+
+    .masthead {
+        width: 95%;
+        font-size: 30px;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    ul.nav-buttons li a {
+        line-height: 30px;
+        font-size: 30px;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    li {
+        padding-top: 0%;
+    }
+
+    .container {
+        margin-top: 150px;
+    }
+    
+    .fullscreen-video__video {
+        display: none;
+    }
+    
+}
+
+/* Media Queries bigger than small */
+
+@media (min-width: 701px) {
+    
+    .fullscreen-gif {
+        display: none;
+    }
+    
+}
 
 
 .clearfix::before,
