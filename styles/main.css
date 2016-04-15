@@ -13,9 +13,9 @@ body.landing {
  }
 
 body {
-    color: white;             /* sets the text color to white */
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
     text-decoration: none;
+    position: relative;
  }
 
 #top {
@@ -42,23 +42,36 @@ body {
 }
 
 /* Nav Elements */
+/*
 .fixed-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
+*/
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.affix ~ .container-fluid {
+    padding-top: 70px;
+}
 
 nav {
     background-color: white;
-    height: 50px;
+    height: 80px;
     width: 100%;
-    top: 92%;
-    z-index: 500;
+    top: 530px;
+    margin-bottom: 0px;
     overflow: auto;
     position: absolute;
     overflow-x: hidden;
     overflow-y: hidden;
+    z-index: 500;
 }
 
 #home-link {
@@ -66,6 +79,7 @@ nav {
     margin-left: 150px;
     width: 220px;
     position: relative;
+    float: left;
     margin-left: 10px;
     display: inline-block;
     cursor: pointer;
@@ -84,8 +98,9 @@ nav {
   margin-left: 25px;
 }
 
-.nav-buttons {
+.navbar-nav {
     margin-top: auto;
+    margin-left: 10px;
     float: right;
     min-width: 50%;
     max-width: 70%;
@@ -93,13 +108,13 @@ nav {
     line-height: 28px;
     padding-top: 10.5px;
     position: relative;
-    display: inline-block;
+    display: inline;
     overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-ul.nav-buttons li a {
+ul.navbar-nav li a {
     height: 20%;
     text-decoration: none;
     font-family: 'Fredoka One', cursive;
@@ -121,7 +136,7 @@ li {
     padding-top: 4px;
 }
 
-ul.nav-buttons li a:hover {
+ul.navbar-nav li a:hover {
     color: #00ccff;
      -webkit-transition: color 0.1s ease-in-out;
     -moz-transition: color 0.1s ease-in-out;
@@ -129,7 +144,7 @@ ul.nav-buttons li a:hover {
     transition: color 0.1s ease-in-out;
 }
 
-/* section elements */
+/* .body-content elements */
 
 .absolute-center {
     width: 10000px;
@@ -157,47 +172,41 @@ ul.nav-buttons li a:hover {
     height: 100%;
 }
 
-section {
+/* body-content elements */
+
+.body-content {
     margin-top: 193%;
 }
 
-/* container elements */
-
-.container {
-    width: 90%;
+.body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form {
+    color: black;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 193%;
-    margin-bottom: 50%;
-    height: 1380px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    overflow-x: auto;
+    text-align: left;
 }
 
-.container p, h1, h2, h3, .timeline, .share-buttons, .contact-form {
-    color: black;
-    margin-left: 120px;
-    margin-right: 100px;
-    margin-top: 15px;
+.body-content h1 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper p {
-    padding-top: 55px;
-    font-size: 30px;
+.body-content p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
 }
 
 .wrapper {
-    height: 70%;
     width: 100%;
-/*    max-width: 2200px;*/
     margin-bottom: 50%;
     z-index: 400;
 }
 
 #wrapper-one {
     background-color: white;
-}
-
-#wrapper-one p {
-    font-family: 'Sue ellen Francisco', cursive;
+    height: 700px;
 }
 
 .waypoint_border {
@@ -214,12 +223,9 @@ section {
 }
 
 #wrapper-two {
+    height: 700px;
     background-color: #33ccff;
     position: relative;
-}
-
-#wrapper-two p {
-    font-family: 'Montserrat', sans-serif;
 }
 
 .timeline {
@@ -244,23 +250,10 @@ section {
     background-color: #99ffcc;
 }
 
-#wrapper-three p {
-    position: relative;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 900;
-    padding-top: 5px;
-    font-size: 20px;
-    line-height: 21px;
-}
-
 #wrapper-four {
+    height: 1000px;
     background-color: #be90d5;
 
-}
-
-#wrapper-four p {
-    font-family: 'Montserrat', sans-serif;
-    color: black;
 }
 
 .form-control {
@@ -282,6 +275,10 @@ section {
     width: 250px;
 }
 
+#topOne, #topTwo, #topThree, #topFour {
+    bottom: 10px;
+}
+
  /* Media Queries small */
 
 @media (max-width: 700px) {
@@ -301,7 +298,7 @@ section {
         width: 100%;
     }
 
-    .nav-buttons {
+    .navbar-nav {
         float: none;
         height: 100px;
         min-width: 100%;
@@ -337,7 +334,7 @@ section {
         margin: 0;
     }
 
-    ul.nav-buttons li a {
+    ul.navbar-nav li a {
         line-height: 30px;
         font-size: 30px;
         padding-top: 0%;
@@ -351,7 +348,7 @@ section {
         padding-top: 0%;
     }
 
-    .container {
+    .body-content {
         margin-top: 150px;
     }
     
@@ -359,8 +356,8 @@ section {
         display: none;
     }
     
-    .container {
-        
+    .body-content {
+        margin-top: 230%;    
     }
     
 }
@@ -374,6 +371,19 @@ section {
     }
     
 }
+
+/* iPhone 5 Portrait */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      
+      nav {
+          width: 400px;
+      }
+} 
 
 
 .clearfix::before,

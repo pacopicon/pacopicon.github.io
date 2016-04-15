@@ -15,10 +15,10 @@ $(window).load(function() {
     $('nav').waypoint(function (direction) {
         if (direction == 'down') {
             $('nav').addClass('fixed-nav');
-//            $('section').css({ 'margin-top': 90 });
+            $('section').css({ 'margin-top': 90 });
         } else if (direction == 'up') {
             $('nav').removeClass('fixed-nav');
-//            $('section').css({ 'margin-top': 30 });
+            $('section').css({ 'margin-top': 30 });
         }
     });
 });
