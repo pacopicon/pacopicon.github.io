@@ -9,8 +9,8 @@ html {
 }
 
 body.landing {
-     background-color: black;
- }
+    background-color: black;
+}
 
 body {
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
@@ -42,30 +42,33 @@ body {
 }
 
 /* Nav Elements */
-/*
+
 .fixed-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
-*/
 
+/*
 .affix {
     top: 0;
     width: 100%;
     z-index: 500;
 }
+*/
 
+/*
 .affix ~ .container-fluid {
     padding-top: 70px;
 }
+*/
 
 nav {
     background-color: white;
-    height: 80px;
+    height: 49px;
     width: 100%;
-    top: 530px;
+    top: 560px;
     margin-bottom: 0px;
     overflow: auto;
     position: absolute;
@@ -73,6 +76,20 @@ nav {
     overflow-y: hidden;
     z-index: 500;
 }
+
+/* Non-Bootstrap nav
+nav {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    top: 92%;
+    z-index: 500;
+    overflow: auto;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+*/
 
 #home-link {
     top: 6px;
@@ -100,7 +117,7 @@ nav {
 
 .navbar-nav {
     margin-top: auto;
-    margin-left: 10px;
+    margin-left: 30px;
     float: right;
     min-width: 50%;
     max-width: 70%;
