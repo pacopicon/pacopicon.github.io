@@ -18,9 +18,9 @@
         <script type='text/javascript' src="scripts/my.sticky.js"></script>
         <script type='text/javascript' src="scripts/my.waypoints.js"></script>
         <script type='text/javascript' src="scripts/app.js"></script>
+        <!-- Flexbox Grid -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css">
         <!-- Bootstrap non-custom goes here-->
-<!--
--->
         <!--Custom Bootstrap (leaves nav tabs and certain nav elements alone)-->
         <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap-theme.min.css">
@@ -42,18 +42,28 @@
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
-                    <li id="menu-projects">
-                        <a href="#wrapper-one" class="unhighlighted" id="linkOne">projects</a>
-                    </li>
-                    <li id="menu-about">
-                        <a href="#wrapper-two" class="unhighlighted" id="linkTwo">about me</a>
-                    </li>
-                    <li id="menu-blog">
-                        <a href="#wrapper-three" class="unhighlighted" id="linkThree">blog</a>
-                    </li>
-                    <li id="menu-contact">
-                        <a href="#wrapper-four" class="unhighlighted" id="linkFour">contact</a>
-                    </li>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <li id="menu-projects">
+                                <a href="#wrapper-one" class="unhighlighted" id="linkOne">projects</a>
+                            </li>
+                        </div>
+                        <div class="col-xs-3">
+                            <li id="menu-about">
+                                <a href="#wrapper-two" class="unhighlighted" id="linkTwo">about me</a>
+                            </li>
+                        </div>
+                        <div class="col-xs-3">
+                            <li id="menu-blog">
+                                <a href="#wrapper-three" class="unhighlighted" id="linkThree">blog</a>
+                            </li>
+                        </div>
+                        <div class="col-xs-3">
+                            <li id="menu-contact">
+                                <a href="#wrapper-four" class="unhighlighted" id="linkFour">contact</a>
+                            </li>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -73,7 +83,7 @@
                 </div>
             </div>
             <div class="row content body-content">
-                <div class="col-lg-12 ">
+                <div class="col-lg-12">
                     <div id="wrapper-one" class="wrapper">
                         <div class="waypoint_border" id="topOne">
                             <a href="#top" class="ion-arrow-up-b"></a>

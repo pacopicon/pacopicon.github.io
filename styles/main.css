@@ -15,7 +15,6 @@ body.landing {
 body {
     min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
     text-decoration: none;
-    position: relative;
  }
 
 #top {
@@ -50,37 +49,9 @@ body {
     width: 100%;
 }
 
-/*
-.affix {
-    top: 0;
-    width: 100%;
-    z-index: 500;
-}
-*/
-
-/*
-.affix ~ .container-fluid {
-    padding-top: 70px;
-}
-*/
-
 nav {
     background-color: white;
     height: 49px;
-    width: 100%;
-    top: 560px;
-    margin-bottom: 0px;
-    overflow: auto;
-    position: absolute;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    z-index: 500;
-}
-
-/* Non-Bootstrap nav
-nav {
-    background-color: white;
-    height: 50px;
     width: 100%;
     top: 92%;
     z-index: 500;
@@ -89,15 +60,13 @@ nav {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-*/
 
 #home-link {
     top: 6px;
-    margin-left: 150px;
+    margin-left: 4px;
     width: 220px;
     position: relative;
     float: left;
-    margin-left: 10px;
     display: inline-block;
     cursor: pointer;
 }
@@ -112,15 +81,13 @@ nav {
   text-decoration: none;
   font-family: 'Comfortaa', cursive;
   font-size: 45px;
-  margin-left: 25px;
 }
 
 .navbar-nav {
-    margin-top: auto;
-    margin-left: 30px;
+    margin-left: 0px;
     float: right;
-    min-width: 50%;
-    max-width: 70%;
+    min-width: 70%;
+    max-width: 80%;
     height: 50px;
     line-height: 28px;
     padding-top: 10.5px;
@@ -129,6 +96,11 @@ nav {
     overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.col-xs-3 {
+    flex-basis: 100%;
+    text-align: center;
 }
 
 ul.navbar-nav li a {
@@ -149,7 +121,7 @@ ul.navbar-nav li a {
 
 li {
     display: inline;
-    margin: 1px;
+    margin: 0;
     padding-top: 4px;
 }
 
@@ -183,11 +155,13 @@ ul.navbar-nav li a:hover {
     height: 100%;
 }
 
+/*
 .fullscreen-gif {
     margin: auto;
     width: 100%;
     height: 100%;
 }
+*/
 
 /* body-content elements */
 
@@ -207,7 +181,9 @@ ul.navbar-nav li a:hover {
 
 .body-content h1 {
     font-family: 'Montserrat', sans-serif;
+    margin-left: 5%;
 }
+
 
 .body-content p {
     font-family: 'Josefin Sans', sans-serif;
@@ -298,7 +274,7 @@ ul.navbar-nav li a:hover {
 
  /* Media Queries small */
 
-@media (max-width: 700px) {
+@media (max-width: 785px) {
 
     html, body {
         height: 100%;
@@ -353,7 +329,7 @@ ul.navbar-nav li a:hover {
 
     ul.navbar-nav li a {
         line-height: 30px;
-        font-size: 30px;
+        font-size: 23px;
         padding-top: 0%;
         padding-bottom: 0%;
         margin-left: 5%;
