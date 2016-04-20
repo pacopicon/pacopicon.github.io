@@ -87,7 +87,7 @@ nav {
     margin-left: 0px;
     float: right;
     min-width: 70%;
-    max-width: 80%;
+    max-width: 100%;
     height: 50px;
     line-height: 28px;
     padding-top: 10.5px;
@@ -99,7 +99,7 @@ nav {
 }
 
 .col-xs-3 {
-    flex-basis: 100%;
+    flex-basis: 10%;
     text-align: center;
 }
 
@@ -136,14 +136,7 @@ ul.navbar-nav li a:hover {
 /* .body-content elements */
 
 .absolute-center {
-    width: 10000px;
-    height: 10000px;
-    min-width: 20%;
-    max-width: 100%;
-    min-height: 20%;
-    max-height: 100%;
     overflow: auto;
-    margin: auto;
     position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -500;
@@ -155,13 +148,12 @@ ul.navbar-nav li a:hover {
     height: 100%;
 }
 
-/*
 .fullscreen-gif {
+    overflow: auto;
     margin: auto;
     width: 100%;
     height: 100%;
 }
-*/
 
 /* body-content elements */
 
@@ -332,8 +324,8 @@ ul.navbar-nav li a:hover {
         font-size: 23px;
         padding-top: 0%;
         padding-bottom: 0%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
 
     }
 
@@ -355,18 +347,11 @@ ul.navbar-nav li a:hover {
     
 }
 
-/* Media Queries bigger than small */
 
-@media (min-width: 701px) {
-    
-    .fullscreen-gif {
-        display: none;
-    }
-    
-}
 
 /* iPhone 5 Portrait */
 
+/*
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -377,6 +362,7 @@ ul.navbar-nav li a:hover {
           width: 400px;
       }
 } 
+*/
 
 
 .clearfix::before,
