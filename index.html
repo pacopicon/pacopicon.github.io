@@ -12,15 +12,17 @@
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <!--javascript & jquery-->
+        <!--jquery CDN-->
         <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-        <script type='text/javascript' src="scripts/jquery.waypoints.min.js"></script>
-        <script type='text/javascript' src="scripts/my.sticky.js"></script>
-        <script type='text/javascript' src="scripts/my.waypoints.js"></script>
+        <!--javascript-->
         <script type='text/javascript' src="scripts/app.js"></script>
         <!-- Flexbox Grid -->
         <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css">
-        <!-- Bootstrap non-custom goes here-->
+        <!-- Full-blown Bootstrap goes here-->
+        <!--
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        -->
         <!--Custom Bootstrap (leaves nav tabs and certain nav elements alone)-->
         <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap-theme.min.css">
@@ -34,11 +36,11 @@
     </head>
     <body class="landing"> 
         <div id="top"></div>
-        <nav>
+        <nav class="large-view-port-view">
             <div class="container-fluid">
                 <div id="home-link">
                     <a href="#top" class="home-button">
-                        <div class="masthead">paco|picon</div>
+                        <div class="masthead" >paco|picon</div>
                     </a>
                 </div>
                 <ul class="nav navbar-nav">
@@ -67,6 +69,39 @@
                 </ul>
             </div>
         </nav>
+        <div class="small-view-port-view">
+            <div class="small-nav">
+                <div id="home-link2">
+                    <a href="#top" class="home-button2">
+                        <div class="masthead2">paco|picon</div>
+                    </a>
+                </div>
+            </div>
+            <div class="hamburger-nav">
+                <div class="hamburger-container">
+                    <div class="hamburger glyphicon glyphicon-menu-hamburger">
+                    </div>
+                </div>
+            </div>
+            <div id="hamburgerMenu">
+                <div class="x-out glyphicon glyphicon-remove">
+                </div>
+                <ul>
+                    <li id="menu-projects">
+                        <a href="#wrapper-one" class="unhighlighted" id="linkOne">projects</a>
+                    </li>
+                    <li id="menu-about">
+                        <a href="#wrapper-two" class="unhighlighted" id="linkTwo">about me</a>
+                    </li>
+                    <li id="menu-blog">
+                        <a href="#wrapper-three" class="unhighlighted" id="linkThree">blog</a>
+                    </li>
+                    <li id="menu-contact">
+                        <a href="#wrapper-four" class="unhighlighted" id="linkFour">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 <!--Optimize Portfolio website for mobile-->
 <!-- Wrapper around content at ~90% width and max-width: ~1200px-->
 <!--Look at Blocjams scrolling functionaliy. Event listener for scroll direction down/up and distance that translates to changing colors and applying to css-->
@@ -164,7 +199,7 @@
                                         <textarea class="form-control" rows="12" name='message' placeholder='message ...'></textarea>
                                     </div>
                                     <div class="contact-send-button">
-                                        <button type='submit' class="btn btn-default">send message</button>
+                                        <button type='submit' class="btn btn-default glyphicon glyphicon-send"></button>
                                     </div>
                                 </div>
                             </form>
