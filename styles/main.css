@@ -112,14 +112,20 @@ nav {
     text-align: center;
 }
 
+ul.navbar-nav li {
+    display: inline;
+    margin: 0;
+    padding-top: 4px;
+}
+
 ul.navbar-nav li a {
     height: 20%;
     text-decoration: none;
     font-family: 'Fredoka One', cursive;
     font-size: 22px;
     font-weight: 10;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 8%;
+    padding-bottom: 8%;
     padding-left: 0%;
     padding-right: 0%;
     cursor: pointer;
@@ -128,13 +134,7 @@ ul.navbar-nav li a {
     margin-left: 0%;
 }
 
-li {
-    display: inline;
-    margin: 0;
-    padding-top: 4px;
-}
-
-ul.navbar-nav li a:hover {
+ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     color: #00ccff;
      -webkit-transition: color 0.1s ease-in-out;
     -moz-transition: color 0.1s ease-in-out;
@@ -338,7 +338,7 @@ ul.navbar-nav li a:hover {
         font-size: 30px;
     }
     
-    .masthead2:hover {
+    .masthead2:hover, .stretchIt:hover {
         color: #00ccff;
         -webkit-transition: color 0.1s ease-in-out;
         -moz-transition: color 0.1s ease-in-out;
@@ -364,10 +364,12 @@ ul.navbar-nav li a:hover {
         height: 26px;
         top: 0; left: 0; bottom: 0; right: 0;
     }
+    
     .hamburger {
         font-size: 24px;
         color: white;
         z-index: 500;
+        cursor: pointer;
     }
     
     .hamburger:hover {
@@ -381,6 +383,7 @@ ul.navbar-nav li a:hover {
     .x-out {
         font-size: 24px;
         color: white;
+        cursor: pointer;
     }
     
     .x-out:hover {
@@ -393,7 +396,6 @@ ul.navbar-nav li a:hover {
     
     #hamburgerMenu {
         position: fixed;
-        float: left;
         background-color: #ffdd99;
         right: -20%;
         top: 7%;
@@ -403,7 +405,27 @@ ul.navbar-nav li a:hover {
         margin: auto;
     }
     
+    .side-nav {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
     
+    #hamburgerMenu li {
+        position: relative;
+        display: block;
+        left: -40px;
+        cursor: pointer;
+        width: 200%;
+    }
+    
+    #hamburgerMenu li a {
+        text-align: right;
+        text-decoration: none;
+        font-family: 'Fredoka One', cursive;
+        font-size: 20px;
+        line-height: 80px;
+    } 
     
     .fullscreen-video__video {
         display: none;

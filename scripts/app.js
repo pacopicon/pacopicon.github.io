@@ -30,8 +30,8 @@ $(document).ready(function() {
         element: $('#wrapper-one'),
         handler: function(direction) {
             if (direction == 'down') {
-              $("#linkOne").addClass('highlight');
-              $("#linkOne").removeClass('unhighlighted');
+              $(".linkOne").addClass('highlight');
+              $(".linkOne").removeClass('unhighlighted');
             } else {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
@@ -42,8 +42,8 @@ $(document).ready(function() {
         element: $('#wrapper-two'),
         handler: function(direction) {
             if (direction == 'down') {
-              $("#linkTwo").addClass('highlight');
-              $("#linkTwo").removeClass('unhighlighted');
+              $(".linkTwo").addClass('highlight');
+              $(".linkTwo").removeClass('unhighlighted');
             } else {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
@@ -54,8 +54,8 @@ $(document).ready(function() {
         element: $('#wrapper-three'),
         handler: function(direction) {
             if (direction == 'down') {
-              $("#linkThree").addClass('highlight');
-              $("#linkThree").removeClass('unhighlighted');
+              $(".linkThree").addClass('highlight');
+              $(".linkThree").removeClass('unhighlighted');
             } else {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
@@ -66,8 +66,8 @@ $(document).ready(function() {
         element: $('#wrapper-four'),
         handler: function(direction) {
             if (direction == 'down') {
-              $("#linkFour").addClass('highlight');
-              $("#linkFour").removeClass('unhighlighted');
+              $(".linkFour").addClass('highlight');
+              $(".linkFour").removeClass('unhighlighted');
             } else {
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
@@ -81,8 +81,8 @@ $(document).ready(function() {
             $('li').children().removeClass('highlight');
             $('li').children().addClass('unhighlighted');
           } else {
-            $("#linkOne").addClass('highlight');
-            $("#linkOne").removeClass('unhighlighted');
+            $(".linkOne").addClass('highlight');
+            $(".linkOne").removeClass('unhighlighted');
           };
         }, offset: '100px'});
 
@@ -93,8 +93,8 @@ $(document).ready(function() {
             $('li').children().removeClass('highlight');
             $('li').children().addClass('unhighlighted');
           } else {
-            $("#linkTwo").addClass('highlight');
-            $("#linkTwo").removeClass('unhighlighted');
+            $(".linkTwo").addClass('highlight');
+            $(".linkTwo").removeClass('unhighlighted');
           };
         }, offset: '100px'});
 
@@ -105,8 +105,8 @@ $(document).ready(function() {
             $('li').children().removeClass('highlight');
             $('li').children().addClass('unhighlighted');
           } else {
-            $("#linkThree").addClass('highlight');
-            $("#linkThree").removeClass('unhighlighted');
+            $(".linkThree").addClass('highlight');
+            $(".linkThree").removeClass('unhighlighted');
           };
         }, offset: '100px'});
 
@@ -117,8 +117,8 @@ $(document).ready(function() {
             $('li').children().removeClass('highlight');
             $('li').children().addClass('unhighlighted');
           } else {
-            $("#linkFour").addClass('highlight');
-            $("#linkFour").removeClass('unhighlighted');
+            $(".linkFour").addClass('highlight');
+            $(".linkFour").removeClass('unhighlighted');
           };
         }, offset: '100px'});
     
