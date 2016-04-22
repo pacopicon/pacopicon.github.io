@@ -145,15 +145,15 @@ $(document).ready(function() {
         $('.masthead2').letterStretch();
     });
     
-    // Hamburger listener
+    // Hamburger & x-out listeners
     $(".hamburger").click(function () {  
-        $("#hamburgerMenu").animate({right: "+=109px"});
-        $(".hamburger-container:first-child").html('<div class="x-out glyphicon glyphicon-remove"></div>');    
+        $("#hamburgerMenu").animate({right: "+=20%"});
+        $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {  
-        $("#hamburgerMenu").animate({right: "-109px"});
-        $(".hamburger-container:first-child").html('<div class="hamburger glyphicon glyphicon-menu-hamburger"></div>');
+        $("#hamburgerMenu").animate({right: "-20%"});
+        $(".hamburger").show();
     });
     
     // Sticky nav function

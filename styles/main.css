@@ -325,6 +325,9 @@ ul.navbar-nav li a:hover {
     .stretchIt {
         white-space: nowrap;
         width: 100%;
+        color: white;
+        font-family: 'Comfortaa', cursive;
+        font-size: 30px;
     }
 
     /* .masthead2 is the element picked out by the stretch function*/
@@ -392,13 +395,15 @@ ul.navbar-nav li a:hover {
         position: fixed;
         float: left;
         background-color: #ffdd99;
-        right: -109px;
+        right: -20%;
         top: 7%;
         height: 93%;
         width: 20%;
         z-index: 600;
         margin: auto;
     }
+    
+    
     
     .fullscreen-video__video {
         display: none;
