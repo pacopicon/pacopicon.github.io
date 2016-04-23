@@ -200,6 +200,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     width: 100%;
     margin-bottom: 50%;
     z-index: 400;
+    border-radius: 5px;
 }
 
 #wrapper-one {
@@ -330,7 +331,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
     .stretchIt {
         white-space: normal;
-        width: 80%;
+        width: 90%;
         height: 100%;
         color: white;
         font-family: 'Comfortaa', cursive;
@@ -339,9 +340,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
     /* .masthead2 is the element picked out by the stretch function*/
     .masthead2 {
-        width: 100%;
+        width: 75%;
         height: 100%;
         color: white;
+        margin-left: 4.5%;
         font-family: 'Comfortaa', cursive;
         font-size: 50px;
     }
@@ -371,6 +373,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         margin: auto;
         width: 56px;
         height: 56px;
+        margin-right: 4.5px;
         top: 0; left: 0; bottom: 0; right: 0;
     }
     
