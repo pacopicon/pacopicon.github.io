@@ -93,13 +93,12 @@ nav {
 }
 
 .navbar-nav {
-    margin-left: 0px;
+    margin: 0px;
     float: right;
     min-width: 70%;
     max-width: 100%;
     height: 50px;
     line-height: 28px;
-    padding-top: 10.5px;
     position: relative;
     display: inline;
     overflow: auto;
@@ -126,12 +125,9 @@ ul.navbar-nav li a {
     font-weight: 10;
     padding-top: 8%;
     padding-bottom: 8%;
-    padding-left: 0%;
-    padding-right: 0%;
     cursor: pointer;
     position: relative;
-    margin-right: 0%;
-    margin-left: 0%;
+    top: 10px;
 }
 
 ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
@@ -290,6 +286,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 /* Media Queries small */
 
 @media (max-width: 785px) {
+    
+    body.landing {
+        background-color: white;
+    }
     
     .large-view-port-view {
         display: none;
