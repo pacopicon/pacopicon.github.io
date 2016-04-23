@@ -167,7 +167,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 }
 
 .content {
-/*    width: 100%;*/
+    width: 100%;
 }
 
 .body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form {
@@ -453,6 +453,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
           margin-top: 3px;
       }
       
+      /*You are done with this media query*/
 }
 
 @media only screen 
