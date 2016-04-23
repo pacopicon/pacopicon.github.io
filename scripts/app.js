@@ -1,28 +1,3 @@
-// Masthead letter-stretch function
-
-$.fn.letterStretch = function(){
-    var element       = $(this),
-        contentWidth  = element.width(),
-        text          = element.text(),
-        line          = $('<span class="stretchIt">' + text + '</span>'),
-        numberChar    = element.text().length,
-        spacing       = contentWidth / numberChar,
-        textWidth;
-
-    element.html(line);
-    textWidth = line.width();
-
-    if (textWidth < contentWidth){
-        var  charWidth     = textWidth/numberChar,
-             letterSpacing = spacing - charWidth + (spacing - charWidth) / numberChar; 
-
-        line.css({'letter-spacing': letterSpacing});
-    } else {
-        line.contents().unwrap();
-        element.addClass('justify');
-    }
-};
-
 //$(window).load(function() {
 $(document).ready(function() {
     
@@ -137,12 +112,6 @@ $(document).ready(function() {
                     }
                 }
         });
-    });
-    
-//     Masthead letter stretch function
-    $('.masthead2').letterStretch();
-    $(window).resize(function () {
-        $('.masthead2').letterStretch();
     });
     
     // Hamburger & x-out listeners

@@ -64,7 +64,7 @@ nav {
 
 #home-link {
     top: 6px;
-    margin-left: 4px;
+    margin-left: 0px;
     width: 220px;
     position: relative;
     float: left;
@@ -329,17 +329,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         overflow-x: auto;
     }
 
-    .stretchIt {
-        white-space: normal;
-        width: 90%;
-        height: 100%;
-        color: white;
-        font-family: 'Comfortaa', cursive;
-        font-size: 50px;
-    }
-
-    /* .masthead2 is the element picked out by the stretch function*/
     .masthead2 {
+        text-align: right;
         width: 75%;
         height: 100%;
         color: white;
@@ -348,7 +339,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         font-size: 50px;
     }
     
-    .masthead2:hover, .stretchIt:hover {
+    .masthead2:hover {
         color: #00ccff;
         -webkit-transition: color 0.1s ease-in-out;
         -moz-transition: color 0.1s ease-in-out;
