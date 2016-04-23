@@ -247,7 +247,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
 #wrapper-four {
     height: 1000px;
-    background-color: #be90d5;
+    background-color: #ccd9ff;
 
 }
 
@@ -439,6 +439,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         font-size: 20px;
         line-height: 80px;
     } 
+    
+    #wrapper-one {
+        background-color: #ffccd9;
+    }
     
     .fullscreen-video__video {
         display: none;
