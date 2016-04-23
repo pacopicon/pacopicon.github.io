@@ -139,7 +139,7 @@ $(document).ready(function() {
         });
     });
     
-    // Masthead letter stretch function
+//     Masthead letter stretch function
     $('.masthead2').letterStretch();
     $(window).resize(function () {
         $('.masthead2').letterStretch();
