@@ -449,7 +449,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       
       .masthead2 {
           font-size: 45px;
-          margin-left: 5%;
+          margin-left: 4%;
+          margin-top: 5px;
       }
       
 }
