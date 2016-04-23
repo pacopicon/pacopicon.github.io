@@ -148,11 +148,13 @@ $(document).ready(function() {
     // Hamburger & x-out listeners
     $(".hamburger").click(function () {  
         $("#hamburgerMenu").animate({right: "+=20%"});
+        $(".content").animate({width: "-=20%"})
         $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {  
         $("#hamburgerMenu").animate({right: "-20%"});
+        $(".content").animate({width: "+=20%"})
         $(".hamburger").show();
     });
     

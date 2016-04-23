@@ -153,7 +153,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
 .fullscreen-video__video {
     margin: auto;
-    width: 100%;
+/*    width: 100%;*/
     height: 100%;
 }
 
@@ -168,6 +168,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
 .body-content {
     margin-top: 193%;
+}
+
+.content {
+/*    width: 100%;*/
 }
 
 .body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form {
@@ -304,7 +308,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         position: fixed;
         width: 80%;
         height: 15%;
-        border-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
         background-color: black;
         z-index: 500;
     }
@@ -352,7 +357,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .hamburger-nav {
         position: fixed;
         background-color: black;
-        border-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
         height: 15%;
         right: 0%;
         width: 20%;
