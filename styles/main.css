@@ -314,15 +314,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         background-color: black;
         z-index: 500;
     }
-
-    #home-link2 {
-        position: relative;
-        float: none;
-        width: 100%;
-        height: 100%;
-    }
     
-    #home-link2 a {
+    .home-button2 {
         text-decoration: none;
         text-align: center;
         width: 100%;
@@ -333,6 +326,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         text-align: right;
         width: 75%;
         height: 100%;
+        line-height: 83px;
         color: white;
         margin-left: 4.5%;
         font-family: 'Comfortaa', cursive;
