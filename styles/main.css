@@ -538,6 +538,14 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .hamburger-nav {
         height: 7.5%;
     }
+        
+    .masthead2 {
+          margin-top: -3px;
+    }
+        
+    #hamburgerMenu {
+        top: 7.5%;
+        }
 }
 
 @media only screen 
@@ -570,7 +578,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         background-color: black;
-        z-index: 500;
+        z-index: 600;
     }
     
     .home-button2 {
