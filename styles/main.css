@@ -417,7 +417,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         left: -40px;
         cursor: pointer;
         width: 200%;
-        padding-bottom: 90px;
+        padding-bottom: 80px;
     }
     
     #hamburgerMenu li a {
@@ -486,8 +486,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
           margin-top: -12px; 
       }
       
-      #hamburgerMenu li a {
-        line-height: 120px;
+      #hamburgerMenu li {
+         padding-bottom: 30px;
     } 
 }
 
