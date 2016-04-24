@@ -424,8 +424,26 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         text-decoration: none;
         font-family: 'Fredoka One', cursive;
         font-size: 20px;
-        line-height: 80px;
+        line-height: 120px;
     } 
+    
+    .unhighlighted {
+        color: black;
+        background-color: #ffdd99;
+        -webkit-transition: color 1s ease-in-out;
+        -moz-transition: color 1s ease-in-out;
+        -o-transition: color 1s ease-in-out;
+        transition: color 1s ease-in-out;
+    }
+
+    .highlight {
+        color: white;
+        background-color: black;
+        -webkit-transition: color 1s ease-in-out;
+        -moz-transition: color 1s ease-in-out;
+        -o-transition: color 1s ease-in-out;
+        transition: color 1s ease-in-out;
+    }
     
     #wrapper-one {
         background-color: #ffccd9;
@@ -467,6 +485,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
           font-size: 48px;
           margin-top: -12px; 
       }
+      
+      #hamburgerMenu li a {
+        line-height: 120px;
+    } 
 }
 
 
