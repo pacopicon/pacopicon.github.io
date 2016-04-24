@@ -455,10 +455,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
 }
 
-/* media queries */
-
-
-/* iPhone 5 & 5s Portrait & landscape */
+/* ----------- iPhone 5 ----------- */
 
 @media only screen 
   and (min-device-width: 320px) 
@@ -489,8 +486,231 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       #hamburgerMenu li {
          padding-bottom: 30px;
     } 
+      /*You are done with this media query*/
 }
 
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+      
+      .masthead2 {
+          font-size: 45px;
+          margin-left: 4%;
+          margin-top: 3px;
+      }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+      
+      .masthead2 {
+          font-size: 48px;
+          margin-top: -12px; 
+      }
+      
+      #hamburgerMenu li {
+         padding-bottom: 30px;
+    }
+
+}
+
+/* ----------- all iPads ----------- */
+
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait) { 
+        
+    .small-nav {
+        height: 7.5%;
+    }
+        
+    .hamburger-nav {
+        height: 7.5%;
+    }
+}
+
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : landscape) { 
+    
+    body.landing {
+        background-color: white;
+    }
+    
+    .large-view-port-view {
+        display: none;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .small-view-port-view {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .small-nav {
+        position: fixed;
+        width: 80%;
+        height: 15%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: black;
+        z-index: 500;
+    }
+    
+    .home-button2 {
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+    }
+
+    .masthead2 {
+        text-align: right;
+        width: 75%;
+        height: 70%;
+        margin-top: 10px;
+        color: white;
+        margin-left: 10%;
+        font-family: 'Comfortaa', cursive;
+        font-size: 50px;
+    }
+    
+    .masthead2:hover {
+        color: #00ccff;
+        -webkit-transition: color 0.1s ease-in-out;
+        -moz-transition: color 0.1s ease-in-out;
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out;
+    }
+    
+    .hamburger-nav {
+        position: fixed;
+        background-color: black;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 15%;
+        right: 0%;
+        width: 20%;
+        z-index: 500;
+    }
+    
+    .hamburger-container {
+        position: absolute;
+        overflow: auto;
+        margin: auto;
+        width: 56px;
+        height: 56px;
+        margin-right: 4.5px;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+    
+    .hamburger {
+        font-size: 50px;
+        color: white;
+        z-index: 500;
+        cursor: pointer;
+    }
+    
+    .hamburger:hover {
+        color: #00ccff;
+        -webkit-transition: color 0.1s ease-in-out;
+        -moz-transition: color 0.1s ease-in-out;
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out;
+    }
+  
+    .x-out {
+        font-size: 50px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .x-out:hover {
+        color: red;
+        -webkit-transition: color 0.1s ease-in-out;
+        -moz-transition: color 0.1s ease-in-out;
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out;
+    }
+    
+    #hamburgerMenu {
+        position: fixed;
+        background-color: #ffdd99;
+        border-radius: 5px;
+        right: -25%;
+        top: 15%;
+        height: 85%;
+        width: 25%;
+        z-index: 600;
+        margin: auto;
+    }
+    
+    .side-nav {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+    
+    #hamburgerMenu li {
+        position: relative;
+        display: block;
+        left: -40px;
+        cursor: pointer;
+        width: 200%;
+        padding-bottom: 80px;
+    }
+    
+    #hamburgerMenu li a {
+        text-align: right;
+        text-decoration: none;
+        font-family: 'Fredoka One', cursive;
+        font-size: 20px;
+    } 
+    
+    .unhighlighted {
+        color: black;
+        background-color: #ffdd99;
+        -webkit-transition: color 1s ease-in-out;
+        -moz-transition: color 1s ease-in-out;
+        -o-transition: color 1s ease-in-out;
+        transition: color 1s ease-in-out;
+    }
+
+    .highlight {
+        color: white;
+        background-color: black;
+        -webkit-transition: color 1s ease-in-out;
+        -moz-transition: color 1s ease-in-out;
+        -o-transition: color 1s ease-in-out;
+        transition: color 1s ease-in-out;
+    }
+    
+    #wrapper-one {
+        background-color: #ffccd9;
+    }
+    
+    .fullscreen-video__video {
+        display: none;
+    }
+    
+}
 
 .clearfix::before,
 .clearfix::after {
