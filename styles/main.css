@@ -543,12 +543,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       
     #hamburgerMenu ul {
         margin: 0;
-        margin-top: 10px;
+        margin-top: 12px;
         height: 94%;
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 10px;
+        margin-top: 13px;
     }
     
     #hamburgerMenu li a {
