@@ -491,15 +491,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .content {
           width: 100%;
     }
-    .wrapper {
-          width: 100px;
-          margin: 0 auto;
-    }
-      
-      #hamburgerMenu ul {
-        margin: 0;
-        margin-top: 10px;
-    }
       
       /*You are done with this media query*/
 }
