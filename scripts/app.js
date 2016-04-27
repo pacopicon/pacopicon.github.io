@@ -1,4 +1,10 @@
-//$(window).load(function() {
+//nav jump to spacing
+//mobile nav left margin in gutter + extra 5 pixels wrapper
+// message text box size
+
+
+
+//$(window).load(function(){ 
 $(document).ready(function() {
     
     wrapperOneHighlight = new Waypoint({

@@ -56,8 +56,8 @@ nav {
     top: 92%;
     z-index: 500;
     border-radius: 5px;
-    overflow: auto;
     position: absolute;
+    overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -149,13 +149,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
 .fullscreen-video__video {
     margin: auto;
-/*    width: 100%;*/
-    height: 100%;
-}
-
-.fullscreen-gif {
-    overflow: auto;
-    margin: auto;
     width: 100%;
     height: 100%;
 }
@@ -165,6 +158,22 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 .body-content {
     margin-top: 193%;
 }
+
+.wrapper {
+    width: 90%;
+    margin-bottom: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*
+.wrapper {
+    width: 100%;
+    
+    z-index: 400;
+    border-radius: 5px;
+}
+*/
 
 .content {
     width: 100%;
@@ -191,13 +200,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     text-align: left;
-}
-
-.wrapper {
-    width: 100%;
-    margin-bottom: 50%;
-    z-index: 400;
-    border-radius: 5px;
 }
 
 #wrapper-one {
@@ -275,18 +277,29 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     bottom: 10px;
 }
 
- /* Media Queries large-view-port-view */
+/* Media Query for "< iPad screens" (i.e. desktop) */
 
-@media (min-width: 786px) {
+@media (min-width: 1025px) {
+    
+/*
+    video:first-child {
+        content: url(assets/videos/rotatingEarth.mp4)
+    }
+*/
+}
+
+/* Media Query large-view-port-view */
+
+@media (min-width: 791px) {
     
     .small-view-port-view {
         display: none;
     }
 }
 
-/* Media Queries small-view-port-view */
+/* Media Query small-view-port-view */
 
-@media (max-width: 785px) {
+@media (max-width: 790px) {
     
     body.landing {
         background-color: white;
@@ -414,7 +427,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     #hamburgerMenu li {
         position: relative;
         display: block;
-        left: -40px;
+        left: -30px;
         cursor: pointer;
         width: 200%;
         padding-bottom: 80px;
@@ -545,7 +558,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         
     #hamburgerMenu {
         top: 7.5%;
-        }
+        height: 92.5%
+    }
+        
+    /*You are done with this media query*/
 }
 
 @media only screen 
