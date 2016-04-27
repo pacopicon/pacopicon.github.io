@@ -491,14 +491,18 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
       
-      .masthead2 {
+    .masthead2 {
           font-size: 48px;
           margin-top: -12px; 
-      }
+    }
       
-      #hamburgerMenu li {
-         padding-bottom: 30px;
-    } 
+    #hamburgerMenu li {
+         padding-bottom: 35px;
+    }
+      
+    #hamburgerMenu li a {
+        font-size: 30px;
+    }
       /*You are done with this media query*/
 }
 
