@@ -413,12 +413,17 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         margin: auto;
     }
     
+    #hamburgerMenu ul {
+        margin: 0;
+        margin-top: 10px;
+    }
+    
     #hamburgerMenu li {
         position: relative;
         display: block;
         left: -35px;
         cursor: pointer;
-        width: 200%;
+        width: 100%;
         padding-bottom: 80px;
     }
     
@@ -465,23 +470,28 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
       
-      .masthead2 {
+    .masthead2 {
           font-size: 45px;
           margin-left: 4%;
           margin-top: 3px;
-      }
+    }
       
-      .corner {
+    .corner {
           border-radius: 15px;
-      }
+    }
       
-      .content {
+    .content {
           width: 100%;
-      }
-      .wrapper {
+    }
+    .wrapper {
           width: 100px;
           margin: 0 auto;
-      }
+    }
+      
+      #hamburgerMenu ul {
+        margin: 0;
+        margin-top: 10px;
+    }
       
       /*You are done with this media query*/
 }
@@ -495,28 +505,28 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .small-nav {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        height: 15%;
+        height: 20%;
     }
       
     .masthead2 {
-          font-size: 48px;
+          font-size: 50px;
           margin-top: -12px; 
     }
       
     .hamburger-nav {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        height: 15%;
+        height: 20%;
     }
       
     #hamburgerMenu {
         right: -28%;
-        top: 15%;
-        height: 85%;
+        top: 20%;
+        height: 80%;
     }
       
     #hamburgerMenu li {
-         padding-bottom: 35px;
+         padding-bottom: 30px;
     }
       
     #hamburgerMenu li a {
