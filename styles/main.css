@@ -427,7 +427,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     #hamburgerMenu li {
         position: relative;
         display: block;
-        left: -30px;
+        left: -35px;
         cursor: pointer;
         width: 200%;
         padding-bottom: 80px;
