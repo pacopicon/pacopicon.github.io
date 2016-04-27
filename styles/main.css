@@ -494,7 +494,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       
     #hamburgerMenu ul {
         margin: 0;
-        margin-top: 10px;
+        margin-top: 15px;
         height: 94%;
     }
     
@@ -504,8 +504,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
     #hamburgerMenu li a {
         font-size: 20px;
-        padding-top: 15%;
-        padding-bottom: 15%;
+        padding-top: 20%;
+        padding-bottom: 20%;
         border-radius: 20px;
     }
       
@@ -548,13 +548,13 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 13px;
+        margin-top: 18px;
     }
     
     #hamburgerMenu li a {
         font-size: 30px;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 7%;
+        padding-bottom: 7%;
         border-radius: 20px;
     }
       /*You are done with this media query*/
