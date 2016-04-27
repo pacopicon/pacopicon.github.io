@@ -163,7 +163,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 }
 
 .wrapper {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 45px;    
@@ -311,12 +311,16 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         width: 100%;
     }
     
+    .corner {
+          border-radius: 25px;
+      }
+    
     .small-nav {
         position: fixed;
         width: 80%;
         height: 15%;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
         background-color: black;
         z-index: 500;
     }
@@ -351,8 +355,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .hamburger-nav {
         position: fixed;
         background-color: black;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
         height: 15%;
         right: 0%;
         width: 20%;
@@ -401,7 +405,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     #hamburgerMenu {
         position: fixed;
         background-color: #ffdd99;
-        border-radius: 5px;
         right: -28%;
         top: 15%;
         height: 85%;
