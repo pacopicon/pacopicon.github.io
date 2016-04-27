@@ -126,8 +126,9 @@ ul.navbar-nav li a {
     font-family: 'Fredoka One', cursive;
     font-size: 22px;
     font-weight: 10;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 20px;
     cursor: pointer;
     position: relative;
     top: 10px;
@@ -415,8 +416,9 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
     #hamburgerMenu ul {
         margin: 0;
-        margin-top: 10px;
-    }
+        margin-top: 17px;
+        height: 94%;
+        }
     
     #hamburgerMenu li {
         position: relative;
@@ -424,7 +426,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         left: -35px;
         cursor: pointer;
         width: 100%;
-        padding-bottom: 80px;
+    }
+    
+    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+        margin-top: 80%;
     }
     
     #hamburgerMenu li a {
@@ -432,6 +437,9 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         text-decoration: none;
         font-family: 'Fredoka One', cursive;
         font-size: 20px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        border-radius: 20px;
     } 
     
     .unhighlighted {
