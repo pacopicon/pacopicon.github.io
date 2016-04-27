@@ -475,6 +475,14 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
           border-radius: 15px;
       }
       
+      .content {
+          width: 100%;
+      }
+      .wrapper {
+          width: 100px;
+          margin: 0 auto;
+      }
+      
       /*You are done with this media query*/
 }
 
@@ -484,9 +492,27 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
       
+    .small-nav {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        height: 15%;
+    }
+      
     .masthead2 {
           font-size: 48px;
           margin-top: -12px; 
+    }
+      
+    .hamburger-nav {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 15%;
+    }
+      
+    #hamburgerMenu {
+        right: -28%;
+        top: 15%;
+        height: 85%;
     }
       
     #hamburgerMenu li {
