@@ -614,12 +614,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
     .menuMove p:after {
     /* Exactly the same as iPhone 5 portrait */
-        content: "28"
+        content: "28";
     }
     
     .contentWidth p:after {
         /* Exactly the same as iPhone 5 landscape */
-        content: "20"
+        content: "20";
     }
     
 }
@@ -665,12 +665,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       
     .menuMove p:after {
     /* iPhone portrait: exactly the same as small-screen media query */
-        content: "28"
+        content: "28";
     }
     
     .contentWidth p:after {
     /* iPhone portrait: exactly the same as small-screen media query */
-        content: "20"
+        content: "20";
     }
 }
 
@@ -723,12 +723,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
     .menuMove p:after {
     /* iPhone landscape */
-        content: "20"
+        content: "20";
     }
     
     .contentWidth p:after {
     /* iPhone landscape */
-        content: "20"
+        content: "20";
     }
 }
 
@@ -747,12 +747,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       
     .menuMove p:after {
     /* iPhone portrait: exactly the same as small-screen media query */
-        content: "28"
+        content: "28";
     }
     
     .contentWidth p:after {
     /* iPhone portrait: exactly the same as small-screen media query */
-        content: "20"
+        content: "20";
     }
 
 }
@@ -775,12 +775,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       
     .menuMove p:after {
     /* iPhone landscape */
-        content: "20"
+        content: "20";
     }
     
     .contentWidth p:after {
     /* iPhone landscape */
-        content: "20"
+        content: "20";
     }
 
 }
@@ -811,12 +811,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         
     .menuMove p:after {
     /* iPad portrait */
-        content: "28"
+        content: "28";
     }
     
     .contentWidth p:after {
     /* iPad portrait */
-        content: "20"
+        content: "20";
     }
 }
 
@@ -993,12 +993,12 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         
     .menuMove p:after {
     /* iPad landscape */
-        content: "20"
+        content: "20";
     }
     
     .contentWidth p:after {
     /* iPad landscape */
-        content: "20"
+        content: "20";
     }
     
 }

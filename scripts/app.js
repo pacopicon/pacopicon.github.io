@@ -123,9 +123,23 @@ $(document).ready(function() {
     // Hamburger & x-out listeners
     $(".hamburger").click(function () {
         
-        var MenuMove = parseInt($('.menuMove').text());
-        var ContentWidth = parseInt($('.contentWidth').text());
+//        var MenuMove = parseInt($('.menuMove').text());
+//        var ContentWidth = parseInt($('.contentWidth').text());
         
+        if ($(window).width() < 790 && $(window).width() > 568) {
+            var MenuMove = 20;
+            var ContentWidth = 20;
+        } else if ($(window).width() <= 568 && $(window).width() > 320) {
+            var MenuMove = 20;
+            var ContentWidth = 20;
+        } else if ($(window).width() <= 320) {
+            var MenuMove = 28;
+            var ContentWidth = 20;
+        } else {
+            var MenuMove = 28;
+            var ContentWidth = 20;
+        }
+            
         $("#hamburgerMenu").animate({right: '+=' + MenuMove + '%'});
         $(".content").animate({width: '-=' + ContentWidth + '%'})
         $(".hamburger").hide();    
@@ -133,8 +147,6 @@ $(document).ready(function() {
     
     $(".x-out").click(function () {
         
-        var MenuMove = parseInt($('.menuMove').text());
-        var ContentWidth = parseInt($('.contentWidth').text());
         
         $("#hamburgerMenu").animate({right: '-' + MenuMove + '%'});
         $(".content").animate({width: '+=' + ContentWidth + '%'})
