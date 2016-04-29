@@ -127,7 +127,7 @@ $(document).ready(function() {
             var ContentWidth = 20;
         } else if ($(window).width() <= 568 && $(window).width() > 320) {
             var MenuMove = 22;
-            var ContentWidth = 18;
+            var ContentWidth = 16;
         } else if ($(window).width() <= 320) {
             var MenuMove = 28;
             var ContentWidth = 20;
