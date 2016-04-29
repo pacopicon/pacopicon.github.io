@@ -611,17 +611,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .fullscreen-video__video {
         display: none;
     }
-    
-    .menuMove p:after {
-    /* Exactly the same as iPhone 5 portrait */
-        content: "28";
-    }
-    
-    .contentWidth p:after {
-        /* Exactly the same as iPhone 5 landscape */
-        content: "20";
-    }
-    
 }
 
 /* ----------- iPhone 5 portrait ----------- */
@@ -646,6 +635,11 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
           width: 100%;
     }
       
+    #hamburgerMenu {
+        right: -28%;
+        width: 28%;
+    }
+      
     #hamburgerMenu ul {
         margin: 0;
         margin-top: 15px;
@@ -663,15 +657,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         border-radius: 20px;
     }
       
-    .menuMove p:after {
-    /* iPhone portrait: exactly the same as small-screen media query */
-        content: "28";
-    }
-    
-    .contentWidth p:after {
-    /* iPhone portrait: exactly the same as small-screen media query */
-        content: "20";
-    }
 }
 
 /* ----------- iPhone 5 landscape ----------- */
@@ -699,6 +684,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     }
       
     #hamburgerMenu {
+        width: 28%;
         right: -28%;
         top: 20%;
         height: 80%;
@@ -720,16 +706,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         padding-bottom: 7%;
         border-radius: 20px;
     }
-    
-    .menuMove p:after {
-    /* iPhone landscape */
-        content: "20";
-    }
-    
-    .contentWidth p:after {
-    /* iPhone landscape */
-        content: "20";
-    }
 }
 
 /* ----------- iPhone 6+ portrait ----------- */
@@ -744,17 +720,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         margin-left: 4%;
         margin-top: 3px;
     }
-      
-    .menuMove p:after {
-    /* iPhone portrait: exactly the same as small-screen media query */
-        content: "28";
-    }
-    
-    .contentWidth p:after {
-    /* iPhone portrait: exactly the same as small-screen media query */
-        content: "20";
-    }
-
 }
 
 /* ----------- iPhone 6+ landscape ----------- */
@@ -772,17 +737,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     #hamburgerMenu li {
         padding-bottom: 30px;
     }
-      
-    .menuMove p:after {
-    /* iPhone landscape */
-        content: "20";
-    }
-    
-    .contentWidth p:after {
-    /* iPhone landscape */
-        content: "20";
-    }
-
 }
 
 /* ----------- all iPads portrait ----------- */
@@ -807,16 +761,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     #hamburgerMenu {
         top: 7.5%;
         height: 92.5%
-    }
-        
-    .menuMove p:after {
-    /* iPad portrait */
-        content: "28";
-    }
-    
-    .contentWidth p:after {
-    /* iPad portrait */
-        content: "20";
     }
 }
 
@@ -990,17 +934,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .fullscreen-video__video {
         display: none;
     }
-        
-    .menuMove p:after {
-    /* iPad landscape */
-        content: "20";
-    }
-    
-    .contentWidth p:after {
-    /* iPad landscape */
-        content: "20";
-    }
-    
 }
 
 .clearfix::before,

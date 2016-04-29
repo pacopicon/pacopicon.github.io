@@ -132,7 +132,7 @@ $(document).ready(function() {
             var MenuMove = 28;
             var ContentWidth = 20;
         } else {
-            var MenuMove = 28;
+            var MenuMove = 25;
             var ContentWidth = 20;
         }
     
