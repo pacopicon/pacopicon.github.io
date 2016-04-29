@@ -122,7 +122,7 @@ $(document).ready(function() {
     
     // Hamburger & x-out listeners
     
-    if ($(window).width() < 790 && $(window).width() > 568) {
+    if ($(window).width() <= 790 && $(window).width() > 568) {
             var MenuMove = 20;
             var ContentWidth = 20;
         } else if ($(window).width() <= 568 && $(window).width() > 320) {
@@ -131,7 +131,7 @@ $(document).ready(function() {
         } else if ($(window).width() <= 320) {
             var MenuMove = 28;
             var ContentWidth = 20;
-        } else {
+        } else if ($(window).width() > 790 && $(window).width() <= 1024) {
             var MenuMove = 25;
             var ContentWidth = 20;
         }
