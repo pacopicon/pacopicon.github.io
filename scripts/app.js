@@ -2,7 +2,10 @@
 //mobile nav left margin in gutter + extra 5 pixels wrapper
 // message text box size
 
+// screen-specific moving-side-gutter calibrator: depending on the media used, the gutter will execute the JS animation function using data hidden as an attribute in HTML media-queried to that screen
 
+var MenuMove = parseInt($('.menuMove').text());
+var ContentWidth = parseInt($('.contentWidth').text());
 
 //$(window).load(function(){ 
 $(document).ready(function() {
@@ -121,15 +124,15 @@ $(document).ready(function() {
     });
     
     // Hamburger & x-out listeners
-    $(".hamburger").click(function () {  
-        $("#hamburgerMenu").animate({right: "+=28%"});
-        $(".content").animate({width: "-=20%"})
-        $(".hamburger").hide();    
+    $(".hamburger").click(function () {
+            $("#hamburgerMenu").animate({right: '+=' + MenuMove + '%'});
+            $(".content").animate({width: '-=' + ContentWidth + '%'})
+            $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {  
-        $("#hamburgerMenu").animate({right: "-28%"});
-        $(".content").animate({width: "+=20%"})
+        $("#hamburgerMenu").animate({right: '-' + MenuMove + '%'});
+        $(".content").animate({width: '+=' + ContentWidth + '%'})
         $(".hamburger").show();
     });
     

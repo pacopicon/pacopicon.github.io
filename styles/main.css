@@ -270,15 +270,9 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     bottom: 10px;
 }
 
-/* Media Query for "< iPad screens" (i.e. desktop) */
-
-@media (min-width: 1025px) {
-    
-/*
-    video:first-child {
-        content: url(assets/videos/rotatingEarth.mp4)
-    }
-*/
+.media-hamburger-menu-data {
+    display: none;
+    /*This data, written in actual HTML text, allows the hamburger-menu behavior (written in JS) to respond to different devices via media-queries.  The HTML texts do not appear in HTML, they are snuck in through CSS "content" property */
 }
 
 /* Media Query large-view-port-view */
@@ -288,6 +282,156 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     .small-view-port-view {
         display: none;
     }
+}
+
+/* Media Query for "< iPad screens" (i.e. desktop) */
+
+@media (min-width: 1025px) {
+    
+    .small-nav {
+        position: fixed;
+        width: 80%;
+        height: 15%;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-color: black;
+        z-index: 500;
+    }
+    
+    .home-button2 {
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+    }
+
+    .masthead2 {
+        text-align: right;
+        width: 75%;
+        height: 70%;
+        margin-top: 10px;
+        color: white;
+        margin-left: 10%;
+        font-family: 'Comfortaa', cursive;
+        font-size: 50px;
+    }
+    
+    .masthead2:hover {
+        color: #00ccff;
+        -webkit-transition: color 0.1s ease-in-out;
+        -moz-transition: color 0.1s ease-in-out;
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out;
+    }
+    
+    .hamburger-nav {
+        position: fixed;
+        background-color: black;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        height: 15%;
+        right: 0%;
+        width: 20%;
+        z-index: 500;
+    }
+    
+    .hamburger-container {
+        position: absolute;
+        overflow: auto;
+        margin: auto;
+        width: 56px;
+        height: 56px;
+        margin-right: 4.5px;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+    
+    .hamburger {
+        font-size: 50px;
+        color: white;
+        z-index: 500;
+        cursor: pointer;
+    }
+    
+    .hamburger:hover {
+        color: #00ccff;
+        -webkit-transition: color 0.1s ease-in-out;
+        -moz-transition: color 0.1s ease-in-out;
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out;
+    }
+  
+    .x-out {
+        font-size: 50px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .x-out:hover {
+        color: red;
+        -webkit-transition: color 0.1s ease-in-out;
+        -moz-transition: color 0.1s ease-in-out;
+        -o-transition: color 0.1s ease-in-out;
+        transition: color 0.1s ease-in-out;
+    }
+    
+    #hamburgerMenu {
+        position: fixed;
+        background-color: #ffdd99;
+        right: -28%;
+        top: 15%;
+        height: 85%;
+        width: 28%;
+        z-index: 600;
+        margin: auto;
+    }
+    
+    #hamburgerMenu ul {
+        margin: 0;
+        margin-top: 17px;
+        height: 94%;
+        }
+    
+    #hamburgerMenu li {
+        position: relative;
+        display: block;
+        left: -35px;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+        margin-top: 80%;
+    }
+    
+    #hamburgerMenu li a {
+        text-align: right;
+        text-decoration: none;
+        font-family: 'Fredoka One', cursive;
+        font-size: 20px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        border-radius: 20px;
+    } 
+    
+    .unhighlighted {
+        color: black;
+        background-color: #ffdd99;
+        -webkit-transition: color 1s ease-in-out;
+        -moz-transition: color 1s ease-in-out;
+        -o-transition: color 1s ease-in-out;
+        transition: color 1s ease-in-out;
+    }
+
+    .highlight {
+        color: white;
+        background-color: black;
+        -webkit-transition: color 1s ease-in-out;
+        -moz-transition: color 1s ease-in-out;
+        -o-transition: color 1s ease-in-out;
+        transition: color 1s ease-in-out;
+    }
+    
 }
 
 /* Media Query small-view-port-view */
@@ -468,9 +612,19 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         display: none;
     }
     
+    .menuMove p:after {
+    /* Exactly the same as iPhone 5 portrait */
+        content: "28"
+    }
+    
+    .contentWidth p:after {
+        /* Exactly the same as iPhone 5 landscape */
+        content: "20"
+    }
+    
 }
 
-/* ----------- iPhone 5 ----------- */
+/* ----------- iPhone 5 portrait ----------- */
 
 @media only screen 
   and (min-device-width: 320px) 
@@ -509,9 +663,18 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         border-radius: 20px;
     }
       
-      /*You are done with this media query*/
+    .menuMove p:after {
+    /* iPhone portrait: exactly the same as small-screen media query */
+        content: "28"
+    }
+    
+    .contentWidth p:after {
+    /* iPhone portrait: exactly the same as small-screen media query */
+        content: "20"
+    }
 }
 
+/* ----------- iPhone 5 landscape ----------- */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -557,45 +720,72 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         padding-bottom: 7%;
         border-radius: 20px;
     }
-      /*You are done with this media query*/
+    
+    .menuMove p:after {
+    /* iPhone landscape */
+        content: "20"
+    }
+    
+    .contentWidth p:after {
+    /* iPhone landscape */
+        content: "20"
+    }
 }
 
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait */
+/* ----------- iPhone 6+ portrait ----------- */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
       
-      .masthead2 {
-          font-size: 45px;
-          margin-left: 4%;
-          margin-top: 3px;
-      }
+    .masthead2 {
+        font-size: 45px;
+        margin-left: 4%;
+        margin-top: 3px;
+    }
+      
+    .menuMove p:after {
+    /* iPhone portrait: exactly the same as small-screen media query */
+        content: "28"
+    }
+    
+    .contentWidth p:after {
+    /* iPhone portrait: exactly the same as small-screen media query */
+        content: "20"
+    }
 
 }
 
-/* Landscape */
+/* ----------- iPhone 6+ landscape ----------- */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
       
-      .masthead2 {
-          font-size: 48px;
-          margin-top: -12px; 
-      }
+    .masthead2 {
+        font-size: 48px;
+        margin-top: -12px; 
+    }
       
-      #hamburgerMenu li {
-         padding-bottom: 30px;
+    #hamburgerMenu li {
+        padding-bottom: 30px;
+    }
+      
+    .menuMove p:after {
+    /* iPhone landscape */
+        content: "20"
+    }
+    
+    .contentWidth p:after {
+    /* iPhone landscape */
+        content: "20"
     }
 
 }
 
-/* ----------- all iPads ----------- */
+/* ----------- all iPads portrait ----------- */
 
 @media only screen 
     and (min-device-width : 768px) 
@@ -619,9 +809,18 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         height: 92.5%
     }
         
-    /*You are done with this media query*/
+    .menuMove p:after {
+    /* iPad portrait */
+        content: "28"
+    }
+    
+    .contentWidth p:after {
+    /* iPad portrait */
+        content: "20"
+    }
 }
 
+/* ----------- all iPads landscape ----------- */
 @media only screen 
     and (min-device-width : 768px) 
     and (max-device-width : 1024px) 
@@ -790,6 +989,16 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
     .fullscreen-video__video {
         display: none;
+    }
+        
+    .menuMove p:after {
+    /* iPad landscape */
+        content: "20"
+    }
+    
+    .contentWidth p:after {
+    /* iPad landscape */
+        content: "20"
     }
     
 }
