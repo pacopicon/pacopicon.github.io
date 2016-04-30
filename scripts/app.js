@@ -154,10 +154,6 @@ $(document).ready(function() {
     });
     
     if (navigator.userAgent.match(/iPad/i) == null) {
-    //if iPad is not being used
-        $('.small-view-port-view')hide();
-        $('.large-view-port-view')show();
-    } else {
     //if iPad is being used
         $('.small-view-port-view')show();
         $('.large-view-port-view')hide();
@@ -173,8 +169,6 @@ $(document).ready(function() {
             $('section').css({ 'margin-top': 30 });
         }
     });
-    
-    
 });
 
 /*!
