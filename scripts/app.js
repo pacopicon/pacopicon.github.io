@@ -162,18 +162,12 @@ $(document).ready(function() {
     }
     
     $(".hamburger").click(function () {
-        
-//        var MenuMove = parseInt($('.menuMove').text());
-//        var ContentWidth = parseInt($('.contentWidth').text());
-            
         $("#hamburgerMenu").animate({right: '+=' + MenuMove + '%'});
         $(".content").animate({width: '-=' + ContentWidth + '%'})
         $(".hamburger").hide();    
     });
     
-    $(".x-out").click(function () {
-        
-        
+    $(".x-out").click(function () {        
         $("#hamburgerMenu").animate({right: '-' + MenuMove + '%'});
         $(".content").animate({width: '+=' + ContentWidth + '%'})
         $(".hamburger").show();
