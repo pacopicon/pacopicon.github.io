@@ -121,19 +121,30 @@ $(document).ready(function() {
     
     // Hamburger & x-out listeners
     
-    if ($(window).width() <= 790 && $(window).width() > 568) {
-            var MenuMove = 20;
-            var ContentWidth = 20;
-        } else if ($(window).width() <= 568 && $(window).width() > 320) {
-            var MenuMove = 22;
-            var ContentWidth = 17;
-        } else if ($(window).width() <= 320) {
-            var MenuMove = 28;
-            var ContentWidth = 20;
-        } else if ($(window).width() > 790 && $(window).width() <= 1024) {
-            var MenuMove = 25;
-            var ContentWidth = 20;
-        }
+    var iPhone4Port = ($(window).width() == 320 && $(window).height() == 480),
+    iPhone4Land = ($(window).width() == 480 && $(window).height() == 320),
+    iPhone5Port = ($(window).width() == 320 && $(window).height() == 568),
+    iPhone5Land = ($(window).width() == 568 && $(window).height() == 320),
+    iPhone6Port = ($(window).width() == 375 && $(window).height() == 667),
+    iPhone6Land = ($(window).width() == 667 && $(window).height() == 375),
+    iPhone6PlusPort = ($(window).width() == 414 && $(window).height() == 736),
+    iPhone6PlusLand = ($(window).width() == 736 && $(window).height() == 414),
+    iPadPort = ($(window).width() == 768 && $(window).height() == 1024),
+    iPadLand = ($(window).width() == 1024 && $(window).height() == 768);
+    
+    if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
+        var MenuMove = 28;
+        var ContentWidth = 20;
+    } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
+        var MenuMove = 22;
+        var ContentWidth = 17;
+    } else if (iPadPort) {
+        var MenuMove = 25;
+        var ContentWidth = 20;
+    } else if (iPadLand) {
+        var MenuMove = 25;
+        var ContentWidth = 20;
+    }
     
     $(".hamburger").click(function () {
         
