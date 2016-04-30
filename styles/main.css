@@ -506,8 +506,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
     #hamburgerMenu li a {
         font-size: 20px;
-        padding-top: 25%;
-        padding-bottom: 25%;
+        padding-top: 27%;
+        padding-bottom: 27%;
         border-radius: 20px;
     }
       
@@ -551,13 +551,13 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 18px;
+        margin-top: 21px;
     }
     
     #hamburgerMenu li a {
         font-size: 30px;
-        padding-top: 15%;
-        padding-bottom: 15%;
+        padding-top: 25%;
+        padding-bottom: 25%;
         border-radius: 20px;
     }
 }
@@ -573,11 +573,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         font-size: 45px;
         margin-left: 4%;
         margin-top: 3px;
-    }
-      
-    #hamburgerMenu li a {
-        padding-top: 30%;
-        padding-bottom: 30%;
     }
 }
 
