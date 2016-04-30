@@ -153,11 +153,11 @@ $(document).ready(function() {
         $(".hamburger").show();
     });
     
-    if (navigator.userAgent.match(/iPad/i) == null) {
-    //if iPad is being used
-        $('.small-view-port-view')show();
-        $('.large-view-port-view')hide();
-    }
+//    if (navigator.userAgent.match(/iPad/i) == null) {
+//    //if iPad is being used
+//        $('.small-view-port-view')show();
+//        $('.large-view-port-view')hide();
+//    }
     
     // Sticky nav function
     $('nav').waypoint(function (direction) {
