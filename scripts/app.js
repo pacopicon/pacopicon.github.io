@@ -123,27 +123,27 @@ $(document).ready(function() {
     
     // Apple devices: variables
     
-    var p4 = 320,
-        l4 = 480,
-        p5 = 320,
-        l5 = 568,
-        p6 = 375,
-        l6 = 667,
-        p6p = 414,
-        l6p = 736,
-        ppad = 768,
-        lpad = 1024,
+    var p4 = 320, // iphone 4 portrait
+        l4 = 480, // iphone 4 landscape
+        p5 = 320, // iphone 5 port
+        l5 = 568, // iphone 5 land
+        p6 = 375, // iphone 6 port
+        l6 = 667, // iphone 6 land
+        p6p = 414, // iphone 6+ port
+        l6p = 736, // iphone 6+ land
+        ppad = 768, // ipad port
+        lpad = 1024, // ipad land
         
-        iPhone4Port = ($(window).width() => p4 && $(window).width() < l4),
-        iPhone4Land = ($(window).width() => l4 && $(window).width() < l5),
-        iPhone5Port = ($(window).width() => p5 && $(window).width() < l5),
-        iPhone5Land = ($(window).width() => l5 && $(window).width() < l6),
-        iPhone6Port = ($(window).width() => p6 && $(window).width() < l6),
-        iPhone6Land = ($(window).width() => l6 && $(window).width() < l6p),
-        iPhone6PlusPort = ($(window).width() => p6p && $(window).width() < l6p),
-        iPhone6PlusLand = ($(window).width() => l6p && $(window).width() < lpad),
-        iPadPort = ($(window).width() => ppad && $(window).width() < lpad),
-        iPadLand = ($(window).width() => lpad);
+        iPhone4Port = ($(window).width() >= p4 && $(window).width() < l4),
+        iPhone4Land = ($(window).width() >= l4 && $(window).width() < l5),
+        iPhone5Port = ($(window).width() >= p5 && $(window).width() < l5),
+        iPhone5Land = ($(window).width() >= l5 && $(window).width() < l6),
+        iPhone6Port = ($(window).width() >= p6 && $(window).width() < l6),
+        iPhone6Land = ($(window).width() >= l6 && $(window).width() < l6p),
+        iPhone6PlusPort = ($(window).width() >= p6p && $(window).width() < l6p),
+        iPhone6PlusLand = ($(window).width() >= l6p && $(window).width() < lpad),
+        iPadPort = ($(window).width() >= ppad && $(window).width() < lpad),
+        iPadLand = ($(window).width() >= lpad);
     
     // JS media queries    
     
@@ -163,13 +163,13 @@ $(document).ready(function() {
     
     $(".hamburger").click(function () {
         $("#hamburgerMenu").animate({right: '+=' + MenuMove + '%'});
-        $(".content").animate({width: '-=' + ContentWidth + '%'})
+        $(".content").animate({width: '-=' + ContentWidth + '%'});
         $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {        
         $("#hamburgerMenu").animate({right: '-' + MenuMove + '%'});
-        $(".content").animate({width: '+=' + ContentWidth + '%'})
+        $(".content").animate({width: '+=' + ContentWidth + '%'});
         $(".hamburger").show();
     });
     
