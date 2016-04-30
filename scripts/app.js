@@ -1,4 +1,3 @@
-//nav jump to spacing
 //mobile nav left margin in gutter + extra 5 pixels wrapper
 // message text box size
 
@@ -127,7 +126,7 @@ $(document).ready(function() {
             var ContentWidth = 20;
         } else if ($(window).width() <= 568 && $(window).width() > 320) {
             var MenuMove = 22;
-            var ContentWidth = 16;
+            var ContentWidth = 17;
         } else if ($(window).width() <= 320) {
             var MenuMove = 28;
             var ContentWidth = 20;
@@ -153,6 +152,16 @@ $(document).ready(function() {
         $(".content").animate({width: '+=' + ContentWidth + '%'})
         $(".hamburger").show();
     });
+    
+    if (navigator.userAgent.match(/iPad/i) == null) {
+    //if iPad is not being used
+        $('.small-view-port-view')hide();
+        $('.large-view-port-view')show();
+    } else {
+    //if iPad is being used
+        $('.small-view-port-view')show();
+        $('.large-view-port-view')hide();
+    }
     
     // Sticky nav function
     $('nav').waypoint(function (direction) {
