@@ -145,19 +145,21 @@ $(document).ready(function() {
         iPadPort = ($(window).width() >= ppad && $(window).width() < lpad),
         iPadLand = ($(window).width() >= lpad);
     
+        var menuMovePerCent = $('#hamburgerMenu').css("width");
+    
     // JS media queries    
     
     if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
-        var MenuMove = 28;
+        var MenuMove = menuMovePerCent;
         var ContentWidth = 20;
     } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-        var MenuMove = 5;
+        var MenuMove = menuMovePerCent;
         var ContentWidth = 2;
     } else if (iPadPort) {
-        var MenuMove = 25;
+        var MenuMove = menuMovePerCent;
         var ContentWidth = 20;
     } else if (iPadLand) {
-        var MenuMove = 25;
+        var MenuMove = menuMovePerCent;
         var ContentWidth = 20;
     }
     
