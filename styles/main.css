@@ -538,8 +538,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     }
       
     #hamburgerMenu {
-        width: 18%;
-        right: -18%;
+        width: 14%;
+        right: -14%;
         top: 20%;
         height: 80%;
     }
