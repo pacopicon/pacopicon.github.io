@@ -551,7 +551,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 10px;
+        margin-top: 5px;
     }
     
     #hamburgerMenu li a {
