@@ -121,16 +121,31 @@ $(document).ready(function() {
     
     // Hamburger & x-out listeners
     
-    var iPhone4Port = ($(window).width() == 320 && $(window).height() == 480),
-    iPhone4Land = ($(window).width() == 480 && $(window).height() == 320),
-    iPhone5Port = ($(window).width() == 320 && $(window).height() == 568),
-    iPhone5Land = ($(window).width() == 568 && $(window).height() == 320),
-    iPhone6Port = ($(window).width() == 375 && $(window).height() == 667),
-    iPhone6Land = ($(window).width() == 667 && $(window).height() == 375),
-    iPhone6PlusPort = ($(window).width() == 414 && $(window).height() == 736),
-    iPhone6PlusLand = ($(window).width() == 736 && $(window).height() == 414),
-    iPadPort = ($(window).width() == 768 && $(window).height() == 1024),
-    iPadLand = ($(window).width() == 1024 && $(window).height() == 768);
+    // Apple devices: variables
+    
+    var p4 = 320,
+        l4 = 480,
+        p5 = 320,
+        l5 = 568,
+        p6 = 375,
+        l6 = 667,
+        p6p = 414,
+        l6p = 736,
+        ppad = 768,
+        lpad = 1024,
+        
+        iPhone4Port = ($(window).width() => p4 && $(window).width() < l4),
+        iPhone4Land = ($(window).width() => l4 && $(window).width() < l5),
+        iPhone5Port = ($(window).width() => p5 && $(window).width() < l5),
+        iPhone5Land = ($(window).width() => l5 && $(window).width() < l6),
+        iPhone6Port = ($(window).width() => p6 && $(window).width() < l6),
+        iPhone6Land = ($(window).width() => l6 && $(window).width() < l6p),
+        iPhone6PlusPort = ($(window).width() => p6p && $(window).width() < l6p),
+        iPhone6PlusLand = ($(window).width() => l6p && $(window).width() < lpad),
+        iPadPort = ($(window).width() => ppad && $(window).width() < lpad),
+        iPadLand = ($(window).width() => lpad);
+    
+    // JS media queries    
     
     if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
         var MenuMove = 28;
