@@ -556,8 +556,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     
     #hamburgerMenu li a {
         font-size: 18px;
+        text-align: center;
         padding-top: 12%;
         padding-bottom: 12%;
+        padding-left: 4%;
         border-radius: 20px;
     }
 }
