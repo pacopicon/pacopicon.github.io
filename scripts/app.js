@@ -165,13 +165,13 @@ $(document).ready(function() {
     
     $(".hamburger").click(function () {
         $("#hamburgerMenu").animate({right: '+=' + MenuMove});
-        $(".content").animate({width: '-=' + ContentWidth + '%'});
+//        $(".content").animate({width: '-=' + ContentWidth + '%'});
         $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {        
         $("#hamburgerMenu").animate({right: '-' + MenuMove});
-        $(".content").animate({width: '+=' + ContentWidth + '%'});
+//        $(".content").animate({width: '+=' + ContentWidth + '%'});
         $(".hamburger").show();
     });
     
