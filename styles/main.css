@@ -196,6 +196,23 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     text-align: left;
 }
 
+#wrapper-one {
+    height: 700px;
+    background-color: #33ccff;
+    position: relative;
+}
+
+.timeline {
+    position: absolute;
+    bottom: 30px;
+}
+
+.twitter-share-button {
+}
+
+.fb-follow {
+}
+
 #wrapper-two {
     background-color: white;
     height: 700px;
@@ -212,34 +229,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 .waypoint_border a {
     color: black;
     text-decoration: none;
-}
-
-#wrapper-one {
-    height: 700px;
-    background-color: #33ccff;
-    position: relative;
-}
-
-.timeline {
-    position: absolute;
-    bottom: 30px;
-}
-
-.twitter-timeline {
-    background-color: #33ccff;
-}
-
-.share-buttons {
-    position: absolute;
-    top: 130px;
-    margin-left: 120px;
-}
-
-.twitter-share-button {
-/*    how to increase the size?*/
-}
-
-.fb-follow {
 }
 
 #wrapper-three {
@@ -641,8 +630,8 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     #hamburgerMenu {
         top: 7.5%;
         height: 92.5%;
-        right: -28%;
-        width: 28%;
+        right: -8%;
+        width: 8%;
     }
       
     #hamburgerMenu ul {
