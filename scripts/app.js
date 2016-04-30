@@ -154,7 +154,7 @@ $(document).ready(function() {
         var ContentWidth = 20;
     } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
         var MenuMove = menuMovePerCent;
-        var ContentWidth = 0;
+        var ContentWidth = 2;
     } else if (iPadPort) {
         var MenuMove = menuMovePerCent;
         var ContentWidth = 20;
@@ -165,13 +165,13 @@ $(document).ready(function() {
     
     $(".hamburger").click(function () {
         $("#hamburgerMenu").animate({right: '+=' + MenuMove});
-//        $(".content").animate({width: '-=' + ContentWidth + '%'});
+        $(".content").animate({width: '-=' + ContentWidth + '%'});
         $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {        
         $("#hamburgerMenu").animate({right: '-' + MenuMove});
-//        $(".content").animate({width: '+=' + ContentWidth + '%'});
+        $(".content").animate({width: '+=' + ContentWidth + '%'});
         $(".hamburger").show();
     });
     
