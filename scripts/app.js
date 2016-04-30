@@ -150,24 +150,24 @@ $(document).ready(function() {
     // JS media queries    
     
     if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
-        var ContentWidth = 20;
+        var contentWidth = 20;
     } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-        var ContentWidth = -2;
+        var contentWidth = -2;
     } else if (iPadPort) {
         var ContentWidth = 20;
     } else if (iPadLand) {
-        var ContentWidth = 20;
+        var contentWidth = 20;
     }
     
     $(".hamburger").click(function () {
-        $("#hamburgerMenu").animate({right: '+=' + MenuMove});
-        $(".content").animate({width: '-=' + ContentWidth + '%'});
+        $("#hamburgerMenu").animate({right: '+=' + menuMove});
+        $(".content").animate({width: '-=' + contentWidth + '%'});
         $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {        
-        $("#hamburgerMenu").animate({right: '-' + MenuMove});
-        $(".content").animate({width: '+=' + ContentWidth + '%'});
+        $("#hamburgerMenu").animate({right: '-' + menuMove});
+        $(".content").animate({width: '+=' + contentWidth + '%'});
         $(".hamburger").show();
     });
     
