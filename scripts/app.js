@@ -152,7 +152,7 @@ $(document).ready(function() {
     if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
         var contentWidth = 20;
     } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-        var contentWidth = -2;
+        var contentWidth = -10;
     } else if (iPadPort) {
         var ContentWidth = 20;
     } else if (iPadLand) {

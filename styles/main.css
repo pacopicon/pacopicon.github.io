@@ -591,8 +591,31 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         margin-top: -12px; 
     }
       
-    #hamburgerMenu li {
-        padding-bottom: 30px;
+    #hamburgerMenu {
+        width: 14%;
+        right: -14%;
+        top: 20%;
+        height: 80%;
+    }
+      
+    #hamburgerMenu ul {
+        margin: 0;
+        margin-top: 15px;
+        height: 94%;
+    }
+    
+    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+        margin-top: 20px;
+    }
+    
+    #hamburgerMenu li a {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 12%;
+        padding-bottom: 12%;
+        padding-left: 4%;
+        padding-right: 4%;
+        border-radius: 20px;
     }
 }
 
@@ -617,7 +640,26 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         
     #hamburgerMenu {
         top: 7.5%;
-        height: 92.5%
+        height: 92.5%;
+        right: -28%;
+        width: 28%;
+    }
+      
+    #hamburgerMenu ul {
+        margin: 0;
+        margin-top: 20px;
+        height: 94%;
+    }
+    
+    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+        margin-top: 60px;
+    }
+    
+    #hamburgerMenu li a {
+        font-size: 20px;
+        padding-top: 35%;
+        padding-bottom: 35%;
+        border-radius: 20px;
     }
 }
 
