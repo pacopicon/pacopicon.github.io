@@ -528,7 +528,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
       
     .masthead2 {
           font-size: 35px;
-          margin-top: 10%; 
+          margin-top: -20%; 
     }
       
     .hamburger-nav {
@@ -560,6 +560,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         padding-top: 12%;
         padding-bottom: 12%;
         padding-left: 4%;
+        padding-right: 4%;
         border-radius: 20px;
     }
 }

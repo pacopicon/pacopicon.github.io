@@ -151,8 +151,8 @@ $(document).ready(function() {
         var MenuMove = 28;
         var ContentWidth = 20;
     } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-        var MenuMove = 17;
-        var ContentWidth = 10;
+        var MenuMove = 12;
+        var ContentWidth = 7;
     } else if (iPadPort) {
         var MenuMove = 25;
         var ContentWidth = 20;
