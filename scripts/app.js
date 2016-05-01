@@ -150,9 +150,9 @@ $(document).ready(function() {
     // JS media queries    
     
     if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
-        var contentWidth = 20;
+        var contentWidth = 25;
     } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-        var contentWidth = -10;
+        var contentWidth = -5;
     } else if (iPadPort) {
         var ContentWidth = 20;
     } else if (iPadLand) {

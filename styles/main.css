@@ -240,23 +240,35 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     background-color: #ccd9ff;
 }
 
-.form-control {
-    height: 25px;
-    margin-bottom: 15px;
-    border-right: 20px;
-}
-
-.contact-message {
-    height: 250px;
-    width: 600px;
-    margin-bottom: 15px;
-}
-
 .contact-form {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     margin-top: 15px;
-    width: 250px;
+    width: 90%;
+    height: 90%;
+}
+
+.contact-fields {
+    width: 100%;
+    height: 100%;
+}
+
+.form-control {
+    width: 50%;
+    height: 25px;
+    margin-bottom: 15px;
+    border-right: 20px;
+    border-radius: 25px;
+}
+
+.contact-message {
+    height: 50%;
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+.contact-send-button {
+    border-radius: 25px;
 }
 
 #topOne, #topTwo, #topThree, #topFour {
