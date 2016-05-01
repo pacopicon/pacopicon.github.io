@@ -246,6 +246,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     margin-top: 15px;
     width: 90%;
     height: 90%;
+    overflow: auto;
 }
 
 .contact-fields {
@@ -255,17 +256,27 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 }
 
 .form-control {
-    margin-bottom: 25px;
+    height: 10%;
+    margin-bottom: 15px;
     border-right: 20px;
     border-radius: 25px;
 }
 
+input {
+    width: 40%;
+}
+
 textarea {
-    margin-bottom: 15px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	width: 100%;
     resize: none;
 }
 
 .btn-default {
+    text-align: center;
     border-radius: 25px;
     width: 6%;
 }
