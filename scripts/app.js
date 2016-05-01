@@ -163,7 +163,7 @@ $(window).load(function(){
     }
     
     $(".hamburger").click(function () {
-        $('.about-me p').text("The .width() of this device is: " + $(window).width() "; the innerWidth() of this device is: " + $(window).innerWidth());
+        $('.about-me p').text("The .width() of this device is: " + $(window).width() + "; the innerWidth() of this device is: " + $(window).innerWidth());
         $("#hamburgerMenu").animate({right: '+=' + menuMove});
         $(".content").animate({innerWidth: '-=' + menuMove});
         $(".hamburger").hide();    
