@@ -393,10 +393,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     #hamburgerMenu {
         position: fixed;
         background-color: #ffdd99;
-        right: -28%;
+        width: 11%;
+        right: -11%;
         top: 15%;
         height: 85%;
-        width: 28%;
         z-index: 600;
         margin: auto;
     }
@@ -416,7 +416,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 50%;
+        margin-top: 190%;
     }
     
     #hamburgerMenu li a {
@@ -424,8 +424,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
         text-decoration: none;
         font-family: 'Fredoka One', cursive;
         font-size: 20px;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
         border-radius: 20px;
     } 
     
