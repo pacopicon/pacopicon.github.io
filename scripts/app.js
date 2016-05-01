@@ -146,18 +146,19 @@ $(window).load(function(){
         iPadLand = ($(window).width() >= lpad);
     
         var menuMove = $('#hamburgerMenu').css("width");
+        var contentWidth = 100 - parseInt(menuMove);
     
     // JS media queries    
     
-    if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
-        var contentWidth = 25;
-    } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-        var contentWidth = -5;
-    } else if (iPadPort) {
-        var ContentWidth = 20;
-    } else if (iPadLand) {
-        var contentWidth = 20;
-    }
+//    if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
+//        var contentWidth = 10 - ;
+//    } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
+//        var contentWidth = -5;
+//    } else if (iPadPort) {
+//        var ContentWidth = 20;
+//    } else if (iPadLand) {
+//        var contentWidth = 20;
+//    }
     
     $(".hamburger").click(function () {
         $("#hamburgerMenu").animate({right: '+=' + menuMove});
