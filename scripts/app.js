@@ -162,15 +162,13 @@ $(window).load(function(){
     
     $(".hamburger").click(function () {
         $("#hamburgerMenu").animate({right: '+=' + menuMove});
-        $(".content").animate({width: contentWidth});
-        console.log($('.content').css("width"));
+        $(".content").animate({width: '-=' + menuMove});
         $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {        
-        $("#hamburgerMenu").animate({right: '-' + menuMove});
-        $(".content").animate({width: contentWidth});
-        console.log($('.content').css("width"));
+        $("#hamburgerMenu").animate({right: '-=' + menuMove});
+        $(".content").animate({width: '+=' + menuMove});
         $(".hamburger").show();
     });
     
