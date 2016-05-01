@@ -152,18 +152,22 @@ $(window).load(function(){
     
     // JS media queries    
     
-    if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
-        var contentWidth = 10 - ;
-    } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-        var contentWidth = -5;
-    } else if (iPadPort) {
-        var ContentWidth = 20;
-    } else if (iPadLand) {
-        var contentWidth = 20;
-    }
+//    if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
+//        var contentWidth = 10 - ;
+//    } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
+//        var contentWidth = -5;
+//    } else if (iPadPort) {
+//        var ContentWidth = 20;
+//    } else if (iPadLand) {
+//        var contentWidth = 20;
+//    }
+    
+    (function () {
+        $('.console').text("the .width() of this device is: " + $(window).width() +"; the .innerwidth() of this device is: " + $(window).innerWidth());
+    }());
     
     $(".hamburger").click(function () {
-        $('.about-me p').text("The .width() of this device is: " + $(window).width() + "; the innerWidth() of this device is: " + $(window).innerWidth());
+        $('.console').text($(window).width());
         $("#hamburgerMenu").animate({right: '+=' + menuMove});
         $(".content").animate({innerWidth: '-=' + menuMove});
         $(".hamburger").hide();    
