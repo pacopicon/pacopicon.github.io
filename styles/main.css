@@ -660,7 +660,7 @@ textarea {
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 60%;
+        margin-top: 160%;
     }
     
     #hamburgerMenu li a {
@@ -686,7 +686,7 @@ textarea {
     .masthead2 {
         text-align: left;
         font-size: 60px;
-        margin-top: -5px; 
+        margin-top: -3px; 
     }
       
     .hamburger-nav {
@@ -698,7 +698,7 @@ textarea {
     #hamburgerMenu {
         width: 14%;
         right: -14%;
-        top: 20%;
+        top: 10%;
         height: 90%;
     }
       
