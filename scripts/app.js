@@ -3,8 +3,8 @@
 
 // screen-specific moving-side-gutter calibrator: depending on the media used, the gutter will execute the JS animation function using data hidden as an attribute in HTML media-queried to that screen
 
-//$(window).load(function(){ 
-$(document).ready(function() {
+$(window).load(function(){ 
+//$(document).ready(function() {
     
     wrapperOneHighlight = new Waypoint({
         element: $('#wrapper-one'),
