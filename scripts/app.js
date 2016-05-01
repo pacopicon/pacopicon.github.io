@@ -145,10 +145,29 @@ $(window).load(function(){
 //        iPadPort = ($(window).innerWidth() >= (ppad && - 20) $(window).innerWidth() < lpad),
 //        iPadLand = ($(window).innerWidth() >= (lpad - 20));
     
+    if ($(window).width() <= 1024) {
+        $(window).resize(function (){
+            var wwWidth = $(window).width();
+            $('.content').css("width", wwWidth);
+            var hbWidth = (wwWidth * 0.2);
+            $('#hamburgerMenu').css("width", hbWidth);
+            $('#hamburgerMenu').css("right", -(hbWidth));
+            var contentShrink = wwWidth - hbWidth; 
+            
+            $(".hamburger").click(function () {
+                $("#hamburgerMenu").animate({right: '+=' + hbWidth});
+                $(".content").animate({width: '-=' + contentShrink});
+                $(".hamburger").hide();    
+            });
     
+            $(".x-out").click(function () {
+                $("#hamburgerMenu").animate({right: '-=' + hbWidth});
+                $(".content").animate({width: '+=' + contentShrink});
+                $(".hamburger").show();
+            });
+        });    
+    }
     
-        var menuMove = $('#hamburgerMenu').css("innerWidth");
-        var contentinnerWidth = (100 - parseInt(menuMove)) + "%";
     
     // JS media queries    
     
@@ -162,22 +181,11 @@ $(window).load(function(){
 //        var contentWidth = 20;
 //    }
     
-    (function () {
-        $('.console').text("the .width() of this device is: " + $(window).width() +"; the .innerwidth() of this device is: " + $(window).innerWidth() + "the .height() of this device is: " + $(window).height() + "; the .innerHeight() of this device is: " + $(window).innerHeight());
-    }());
+//    (function () {
+//        $('.console').text("the .width() of this device is: " + $(window).width() +"; the .innerwidth() of this device is: " + $(window).innerWidth() + "the .height() of this device is: " + $(window).height() + "; the .innerHeight() of this device is: " + $(window).innerHeight());
+//    }());
     
-    $(".hamburger").click(function () {
-        $('.console').text($(window).width());
-        $("#hamburgerMenu").animate({right: '+=' + menuMove});
-        $(".content").animate({innerWidth: '-=' + menuMove});
-        $(".hamburger").hide();    
-    });
     
-    $(".x-out").click(function () {
-        $("#hamburgerMenu").animate({right: '-=' + menuMove});
-        $(".content").animate({innerWidth: '+=' + menuMove});
-        $(".hamburger").show();
-    });
     
     // Sticky nav function
     $('nav').waypoint(function (direction) {
