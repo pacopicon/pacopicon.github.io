@@ -146,7 +146,7 @@ $(window).load(function(){
         iPadLand = ($(window).width() >= lpad);
     
         var menuMove = $('#hamburgerMenu').css("width");
-        var contentWidth = 100 - parseInt(menuMove);
+        var contentWidth = parseInt(menuMove) - 2;
     
     // JS media queries    
     
