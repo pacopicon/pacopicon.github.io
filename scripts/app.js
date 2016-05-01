@@ -146,7 +146,7 @@ $(window).load(function(){
         iPadLand = ($(window).width() >= lpad);
     
         var menuMove = $('#hamburgerMenu').css("width");
-        var contentWidth = parseInt(menuMove) - 2;
+        var contentWidth = (100 - parseInt(menuMove)) + "%";
     
     // JS media queries    
     
@@ -162,14 +162,14 @@ $(window).load(function(){
     
     $(".hamburger").click(function () {
         $("#hamburgerMenu").animate({right: '+=' + menuMove});
-        $(".content").animate({width: contentWidth + '%'});
+        $(".content").animate({width: contentWidth});
         console.log($('.content').css("width"));
         $(".hamburger").hide();    
     });
     
     $(".x-out").click(function () {        
         $("#hamburgerMenu").animate({right: '-' + menuMove});
-        $(".content").animate({width: contentWidth + '%'});
+        $(".content").animate({width: contentWidth});
         console.log($('.content').css("width"));
         $(".hamburger").show();
     });
