@@ -559,7 +559,7 @@ textarea {
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 20%;
+        margin-top: 15%;
     }
     
     #hamburgerMenu li a {
@@ -567,8 +567,9 @@ textarea {
         text-align: center;
         padding-top: 5%;
         padding-bottom: 5%;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 30%;
+        padding-right: 30%;
+        margin-left: 10%;
         border-radius: 20px;
     }
 }
