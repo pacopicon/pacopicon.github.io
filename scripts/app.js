@@ -167,11 +167,11 @@ if ($(window).width() <= 1024) {
     }();
     
     $(window).on("orientationchange", function(event) {
-        menuMove;
+        $(document).reload();
     });
     
     $(window).resize(function(){
-       menuMove; 
+       $(document).reload();
     });
 }
     
