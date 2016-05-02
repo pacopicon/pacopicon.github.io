@@ -146,26 +146,25 @@ $(window).load(function(){
 //        iPadLand = ($(window).innerWidth() >= (lpad - 20));
     
     if ($(window).width() <= 1024) {
-        $(window).resize(function (){
             var wwWidth = $(window).width();
             $('.content').css("width", wwWidth);
             var hbWidth = (wwWidth * 0.2);
             $('#hamburgerMenu').css("width", hbWidth);
             $('#hamburgerMenu').css("right", -(hbWidth));
             var contentShrink = wwWidth - hbWidth; 
-            
+        
             $(".hamburger").click(function () {
                 $("#hamburgerMenu").animate({right: '+=' + hbWidth});
-                $(".content").animate({width: '-=' + contentShrink});
+                $(".content").animate({width: '-=' + hbWidth});
                 $(".hamburger").hide();    
             });
     
             $(".x-out").click(function () {
                 $("#hamburgerMenu").animate({right: '-=' + hbWidth});
-                $(".content").animate({width: '+=' + contentShrink});
+                $(".content").animate({width: '+=' + hbWidth});
                 $(".hamburger").show();
             });
-        });    
+        
     }
     
     

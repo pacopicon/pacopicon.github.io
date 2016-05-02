@@ -408,7 +408,7 @@ textarea {
     }
     
     #hamburgerMenu {
-        position: absolute;
+        position: fixed;
         background-color: #ffdd99;
 /*        width: 11%;*/
 /*        right: -11%;*/
