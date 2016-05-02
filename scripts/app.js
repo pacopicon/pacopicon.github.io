@@ -145,18 +145,13 @@ $(window).load(function(){
 //        iPadPort = ($(window).innerWidth() >= (ppad && - 20) $(window).innerWidth() < lpad),
 //        iPadLand = ($(window).innerWidth() >= (lpad - 20));
     
-    if ($(window).width() <= 1024) {
-        var menuMove = function() {
-            var wwWidth = $(window).width();
-            $('.content').css("width", wwWidth);
-            var hbWidth = (wwWidth * 0.2);
-            $('#hamburgerMenu').css("width", hbWidth);
-            $('#hamburgerMenu').css("right", -(hbWidth));  
-        }();
-        
-        $(window).on("orientationchange", function() {
-           menuMove; 
-        });
+if ($(window).width() <= 1024) {
+    var menuMove = function() {
+        var wwWidth = $(window).width();
+        $('.content').css("width", wwWidth);
+        var hbWidth = (wwWidth * 0.2);
+        $('#hamburgerMenu').css("width", hbWidth);
+        $('#hamburgerMenu').css("right", -(hbWidth));  
 
         $(".hamburger").click(function () {
             $("#hamburgerMenu").animate({right: '+=' + hbWidth});
@@ -169,8 +164,17 @@ $(window).load(function(){
             $(".content").animate({width: '+=' + hbWidth});
             $(".hamburger").show();
         });
-
-    }
+    }();
+    
+    $(window).on("orientationchange", function(event) {
+        menuMove;
+    });
+    
+    $(window).resize(function(){
+       menuMove; 
+    });
+}
+    
     
     
     // JS media queries    
