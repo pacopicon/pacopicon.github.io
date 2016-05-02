@@ -559,17 +559,16 @@ textarea {
     }
     
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 30%;
+        margin-top: 20%;
     }
     
     #hamburgerMenu li a {
         font-size: 18px;
-        letter-spacing: 10px;
         text-align: center;
         padding-top: 5%;
         padding-bottom: 5%;
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 15%;
+        padding-right: 15%;
         border-radius: 20px;
     }
 }
