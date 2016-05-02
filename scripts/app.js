@@ -119,7 +119,7 @@ $(window).load(function(){
         });
     });
     
-    // Hamburger & x-out listeners
+// Hamburger & x-out listeners
     
     // Apple devices: variables
     
@@ -133,68 +133,44 @@ $(window).load(function(){
 //        l6p = 736, // iphone 6+ land
 //        ppad = 768, // ipad port
 //        lpad = 1024, // ipad land
-//        
-//        iPhone4Port = ($(window).innerWidth() >= (p4 - 20) && $(window).innerWidth() < l4), // 300-479
-//        iPhone4Land = ($(window).innerWidth() >= (l4 - 20) && $(window).innerWidth() < l5), // 480-567
-//        iPhone5Port = ($(window).innerWidth() >= (p5 - 20) && $(window).innerWidth() < l5), // 568
-//        iPhone5Land = ($(window).innerWidth() >= (l5 - 20) && $(window).innerWidth() < l6),
-//        iPhone6Port = ($(window).innerWidth() >= (p6 - 20) && $(window).innerWidth() < l6),
-//        iPhone6Land = ($(window).innerWidth() >= (l6 - 20) && $(window).innerWidth() < l6p),
-//        iPhone6PlusPort = ($(window).innerWidth() >= (p6p - 20) && $(window).innerWidth() < l6p),
-//        iPhone6PlusLand = ($(window).innerWidth() >= (l6p - 20) && $(window).innerWidth() < lpad),
-//        iPadPort = ($(window).innerWidth() >= (ppad && - 20) $(window).innerWidth() < lpad),
-//        iPadLand = ($(window).innerWidth() >= (lpad - 20));
-    
-if ($(window).width() <= 1024) {
-    var menuMove = function() {
-        var wwWidth = $(window).width();
-        $('.content').css("width", wwWidth);
-        var hbWidth = (wwWidth * 0.3);
-        $('#hamburgerMenu').css("width", hbWidth);
-        $('#hamburgerMenu').css("right", -(hbWidth));  
 
-        $(".hamburger").click(function () {
-            $("#hamburgerMenu").animate({right: '+=' + hbWidth});
-            $(".content").animate({width: '-=' + hbWidth});
-            $(".hamburger").hide();    
+    if ($(window).width() <= 1024) {
+        var menuMove = function() {
+            var wwWidth = $(window).width();
+            $('.content').css("width", wwWidth);
+            var hbWidth = (wwWidth * 0.3);
+            $('#hamburgerMenu').css("width", hbWidth);
+            $('#hamburgerMenu').css("right", -(hbWidth));  
+
+            $(".hamburger").click(function () {
+                $("#hamburgerMenu").animate({right: '+=' + hbWidth});
+                $(".content").animate({width: '-=' + hbWidth});
+                $(".hamburger").hide();    
+            });
+
+            $(".x-out").click(function () {
+                $("#hamburgerMenu").animate({right: '-=' + hbWidth});
+                $(".content").animate({width: '+=' + hbWidth});
+                $(".hamburger").show();
+            });
+        }();
+
+        $(window).on("orientationchange", function(event) {
+            $(document).reload();
+            menuMove;
         });
 
-        $(".x-out").click(function () {
-            $("#hamburgerMenu").animate({right: '-=' + hbWidth});
-            $(".content").animate({width: '+=' + hbWidth});
-            $(".hamburger").show();
+        $(window).resize(function(){
+           $(document).reload();
+            menuMove;
         });
-    }();
-    
-    $(window).on("orientationchange", function(event) {
-        $(document).reload();
-    });
-    
-    $(window).resize(function(){
-       $(document).reload();
-    });
-}
-    
-    
-    
-    // JS media queries    
-    
-//    if (iPhone4Port || iPhone5Port || iPhone6Port || iPhone6PlusPort) {
-//        var contentWidth = 10 - ;
-//    } else if (iPhone4Land || iPhone5Land || iPhone6Land || iPhone6PlusLand) {
-//        var contentWidth = -5;
-//    } else if (iPadPort) {
-//        var ContentWidth = 20;
-//    } else if (iPadLand) {
-//        var contentWidth = 20;
-//    }
+    }
+ 
     
 //    (function () {
 //        $('.console').text("the .width() of this device is: " + $(window).width() +"; the .innerwidth() of this device is: " + $(window).innerWidth() + "the .height() of this device is: " + $(window).height() + "; the .innerHeight() of this device is: " + $(window).innerHeight());
 //    }());
-    
-    
-    
+       
     // Sticky nav function
     $('nav').waypoint(function (direction) {
         if (direction == 'down') {
