@@ -149,7 +149,7 @@ if ($(window).width() <= 1024) {
     var menuMove = function() {
         var wwWidth = $(window).width();
         $('.content').css("width", wwWidth);
-        var hbWidth = (wwWidth * 0.2);
+        var hbWidth = (wwWidth * 0.3);
         $('#hamburgerMenu').css("width", hbWidth);
         $('#hamburgerMenu').css("right", -(hbWidth));  
 
