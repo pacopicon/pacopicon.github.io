@@ -175,7 +175,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 }
 
 .content {
-    width: 100%; 
+    width: 100%;
 }
 
 .body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form {
@@ -204,7 +204,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     height: 700px;
     background-color: #33ccff;
     position: relative;
-    margin-top: 193%;   
+    margin-top: 193%;
 }
 
 .timeline {
@@ -267,6 +267,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     border-radius: 25px;
 }
 
+.ion-paper-airplane {
+  border-style: none;
+}
+
 input {
     width: 100%;
 }
@@ -293,7 +297,7 @@ textarea {
 /* Media Query large-view-port-view */
 
 @media (min-width: 1025px) {
-    
+
     .small-view-port-view {
         display: none;
     }
@@ -302,11 +306,11 @@ textarea {
 /* Media Query small-view-port-view */
 
 @media (max-width: 1024px) {
-    
+
     body.landing {
         background-color: white;
     }
-    
+
     .large-view-port-view {
         display: none;
     }
@@ -315,16 +319,16 @@ textarea {
         height: 100%;
         width: 100%;
     }
-    
+
     .small-view-port-view {
         height: 100%;
         width: 100%;
     }
-    
+
     .corner {
           border-radius: 25px;
       }
-    
+
     .small-nav {
         position: fixed;
         width: 100%;
@@ -333,7 +337,7 @@ textarea {
         background-color: black;
         z-index: 500;
     }
-    
+
     .home-button2 {
         text-decoration: none;
         text-align: center;
@@ -352,7 +356,7 @@ textarea {
         font-family: 'Comfortaa', cursive;
         font-size: 50px;
     }
-    
+
     .masthead2:hover {
         color: #00ccff;
         -webkit-transition: color 0.1s ease-in-out;
@@ -360,7 +364,7 @@ textarea {
         -o-transition: color 0.1s ease-in-out;
         transition: color 0.1s ease-in-out;
     }
-    
+
     .hamburger-container {
         position: absolute;
         overflow: auto;
@@ -370,14 +374,14 @@ textarea {
         margin-right: 4.5px;
         top: 0; left: 0; bottom: 0; right: 0;
     }
-    
+
     .hamburger {
         font-size: 50px;
         color: white;
         z-index: 500;
         cursor: pointer;
     }
-    
+
     .hamburger:hover {
         color: #00ccff;
         -webkit-transition: color 0.1s ease-in-out;
@@ -385,13 +389,13 @@ textarea {
         -o-transition: color 0.1s ease-in-out;
         transition: color 0.1s ease-in-out;
     }
-  
+
     .x-out {
         font-size: 50px;
         color: white;
         cursor: pointer;
     }
-    
+
     .x-out:hover {
         color: red;
         -webkit-transition: color 0.1s ease-in-out;
@@ -399,7 +403,7 @@ textarea {
         -o-transition: color 0.1s ease-in-out;
         transition: color 0.1s ease-in-out;
     }
-    
+
     #hamburgerMenu {
         position: fixed;
         background-color: #ffdd99;
@@ -410,13 +414,13 @@ textarea {
         z-index: 600;
         margin: auto;
     }
-    
+
     #hamburgerMenu ul {
         margin: 0;
         margin-top: 55px;
         height: 94%;
         }
-    
+
     #hamburgerMenu li {
         position: relative;
         display: block;
@@ -424,11 +428,11 @@ textarea {
         cursor: pointer;
         width: 100%;
     }
-    
+
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
         margin-top: 40%;
     }
-    
+
     #hamburgerMenu li a {
         text-align: right;
         text-decoration: none;
@@ -439,8 +443,8 @@ textarea {
         padding-left: 35%;
         padding-right: 35%;
         border-radius: 20px;
-    } 
-    
+    }
+
     .unhighlighted {
         color: black;
         background-color: #ffdd99;
@@ -458,15 +462,15 @@ textarea {
         -o-transition: color 1s ease-in-out;
         transition: color 1s ease-in-out;
     }
-    
+
     #wrapper-one {
         margin-top: -55%;
     }
-    
+
     #wrapper-two {
         background-color: #ffccd9;
     }
-    
+
     .fullscreen-video__video {
         display: none;
     }
@@ -474,91 +478,91 @@ textarea {
 
 /* ----------- iPhone 5 portrait ----------- */
 
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-      
+
     .masthead2 {
           font-size: 45px;
           margin-left: 4%;
           margin-top: 3px;
     }
-      
+
     .corner {
           border-radius: 15px;
     }
-      
+
     .content {
           width: 100%;
     }
-      
+
     #hamburgerMenu {
 /*        right: -28%;*/
 /*        width: 28%;*/
     }
-      
+
     #hamburgerMenu ul {
         margin: 0;
         margin-top: 20px;
         height: 94%;
     }
-    
+
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
         margin-top: 60px;
     }
-    
+
     #hamburgerMenu li a {
         font-size: 20px;
         padding-top: 35%;
         padding-bottom: 35%;
         border-radius: 20px;
     }
-      
+
 }
 
 /* ----------- iPhone 5 landscape ----------- */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-      
+
     .small-nav {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         height: 20%;
     }
-      
+
     .masthead2 {
           font-size: 35px;
-          margin-top: 0%; 
+          margin-top: 0%;
     }
-      
+
     .hamburger-nav {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         height: 20%;
     }
-      
+
     #hamburgerMenu {
 /*        width: 14%;*/
 /*        right: -14%;*/
         top: 20%;
         height: 80%;
     }
-      
+
     #hamburgerMenu ul {
         margin: 0;
         margin-top: 20px;
         height: 94%;
     }
-    
+
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
         margin-top: 15%;
     }
-    
+
     #hamburgerMenu li a {
         font-size: 18px;
         text-align: center;
@@ -572,12 +576,12 @@ textarea {
 }
 
 /* ----------- iPhone 6+ portrait ----------- */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-      
+  and (orientation: portrait) {
+
     .masthead2 {
         font-size: 45px;
         margin-left: 4%;
@@ -586,34 +590,34 @@ textarea {
 }
 
 /* ----------- iPhone 6+ landscape ----------- */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-      
+  and (orientation: landscape) {
+
     .masthead2 {
         font-size: 48px;
-        margin-top: -12px; 
+        margin-top: -12px;
     }
-      
+
     #hamburgerMenu {
 /*        width: 14%;*/
 /*        right: -14%;*/
         top: 20%;
         height: 80%;
     }
-      
+
     #hamburgerMenu ul {
         margin: 0;
         margin-top: 15px;
         height: 94%;
     }
-    
+
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
         margin-top: 20px;
     }
-    
+
     #hamburgerMenu li a {
         font-size: 18px;
         text-align: center;
@@ -627,40 +631,40 @@ textarea {
 
 /* ----------- all iPads portrait ----------- */
 
-@media only screen 
-    and (min-device-width : 768px) 
-    and (max-device-width : 1024px) 
-    and (orientation : portrait) { 
-        
+@media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+
     .small-nav {
         height: 7.5%;
     }
-        
+
     .hamburger-nav {
         height: 7.5%;
     }
-        
+
     .masthead2 {
           margin-top: -2px;
     }
-        
+
     #hamburgerMenu {
         top: 7.5%;
         height: 92.5%;
 /*        width: 14%;*/
 /*        right: -14%;*/
     }
-      
+
     #hamburgerMenu ul {
         margin: 0;
         margin-top: 25px;
         height: 94%;
     }
-    
+
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
         margin-top: 160%;
     }
-    
+
     #hamburgerMenu li a {
         font-size: 20px;
         padding-top: 35%;
@@ -670,46 +674,46 @@ textarea {
 }
 
 /* ----------- all iPads landscape ----------- */
-@media only screen 
-    and (min-device-width : 768px) 
-    and (max-device-width : 1024px) 
-    and (orientation : landscape) { 
-    
+@media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+
   .small-nav {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         height: 10%;
     }
-      
+
     .masthead2 {
         text-align: left;
         font-size: 60px;
-        margin-top: -3px; 
+        margin-top: -3px;
     }
-      
+
     .hamburger-nav {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         height: 10%;
     }
-      
+
     #hamburgerMenu {
 /*        width: 14%;*/
 /*        right: -14%;*/
         top: 10%;
         height: 90%;
     }
-      
+
     #hamburgerMenu ul {
         margin: 0;
         margin-top: 25px;
         height: 94%;
     }
-    
+
     #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
         margin-top: 70%;
     }
-    
+
     #hamburgerMenu li a {
         font-size: 30px;
         text-align: center;
@@ -719,7 +723,7 @@ textarea {
         padding-right: 4%;
         border-radius: 20px;
     }
-    
+
     .fullscreen-video__video {
         display: none;
     }
