@@ -3,6 +3,12 @@
 
 // screen-specific moving-side-gutter calibrator: depending on the media used, the gutter will execute the JS animation function using data hidden as an attribute in HTML media-queried to that screen
 
+if ($(window).width() <= 1024) {
+    var wayOffset = ($('.small-nav').height());
+} else {
+    var wayOffset = ($('nav').height());
+}
+
 $(window).load(function(){ 
 //$(document).ready(function() {
     
@@ -16,7 +22,7 @@ $(window).load(function(){
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-        }, offset: '100px'});
+        }, offset: wayOffset});
 
     wrapperTwoHighlight = new Waypoint({
         element: $('#wrapper-two'),
@@ -28,7 +34,7 @@ $(window).load(function(){
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-        }, offset: '100px'});
+        }, offset: wayOffset});
 
     wrapperThreeHighlight = new Waypoint({
         element: $('#wrapper-three'),
@@ -40,7 +46,7 @@ $(window).load(function(){
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-        }, offset: '100px'});
+        }, offset: wayOffset});
 
     wrapperFourHighlight = new Waypoint({
         element: $('#wrapper-four'),
@@ -52,7 +58,7 @@ $(window).load(function(){
               $('li').children().removeClass('highlight');
               $('li').children().addClass('unhighlighted');
             };
-        }, offset: '100px'});
+        }, offset: wayOffset});
 
     wrapperOneHighlightDeleteDown = new Waypoint({
         element: $('#topOne'),
@@ -134,37 +140,37 @@ $(window).load(function(){
 //        ppad = 768, // ipad port
 //        lpad = 1024, // ipad land
 
-    if ($(window).width() <= 1024) {
+    
         var menuMove = function() {
-            var wwWidth = $(window).width();
-            $('.content').css("width", wwWidth);
-            var hbWidth = (wwWidth * 0.3);
-            $('#hamburgerMenu').css("width", hbWidth);
-            $('#hamburgerMenu').css("right", -(hbWidth));  
+            if ($(window).width() <= 1024) {
+                var wwWidth = $(window).width();
+                $('.content').css("width", wwWidth);
+                var hbWidth = (wwWidth * 0.3);
+                $('#hamburgerMenu').css("width", hbWidth);
+                $('#hamburgerMenu').css("right", -(hbWidth));  
 
-            $(".hamburger").click(function () {
-                $("#hamburgerMenu").animate({right: '+=' + hbWidth});
-                $(".content").animate({width: '-=' + hbWidth});
-                $(".hamburger").hide();    
-            });
+                $(".hamburger").click(function () {
+                    $("#hamburgerMenu").animate({right: '+=' + hbWidth});
+                    $(".content").animate({width: '-=' + hbWidth});
+                    $(".hamburger").hide();    
+                });
 
-            $(".x-out").click(function () {
-                $("#hamburgerMenu").animate({right: '-=' + hbWidth});
-                $(".content").animate({width: '+=' + hbWidth});
-                $(".hamburger").show();
-            });
-        }();
-
+                $(".x-out").click(function () {
+                    $("#hamburgerMenu").animate({right: '-=' + hbWidth});
+                    $(".content").animate({width: '+=' + hbWidth});
+                    $(".hamburger").show();
+                });
+            }
+            }();
+    
         $(window).on("orientationchange", function(event) {
-            $(document).reload();
             menuMove;
         });
 
         $(window).resize(function(){
-           $(document).reload();
             menuMove;
         });
-    }
+    
  
     
 //    (function () {
