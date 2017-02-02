@@ -4,9 +4,10 @@
 // screen-specific moving-side-gutter calibrator: depending on the media used, the gutter will execute the JS animation function using data hidden as an attribute in HTML media-queried to that screen
 
 if ($(window).width() <= 1024) {
-    var wayOffset = ($('.small-nav').height());
-} else {
     var wayOffset = ($('scrollStop').height());
+} else {
+    var wayOffset = 40;
+//    var wayOffset = ($('scrollStop').height());
 //    var wayOffset = ($('nav').height());
 //    var heightNum = $('nav').css("height") - 50px;
 //    var wayOffset = (heightNum);
