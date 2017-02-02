@@ -6,7 +6,10 @@
 if ($(window).width() <= 1024) {
     var wayOffset = ($('.small-nav').height());
 } else {
-    var wayOffset = ($('nav').height());
+    var wayOffset = ($('scrollStop').height());
+//    var wayOffset = ($('nav').height());
+//    var heightNum = $('nav').css("height") - 50px;
+//    var wayOffset = (heightNum);
 }
 
 $(window).load(function(){ 

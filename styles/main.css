@@ -22,8 +22,12 @@ p, a {
 }
 
 #top {
-    top: 0;
     position: absolute;
+}
+
+.scrollStop {
+    position: relative;
+    margin-top: 350px;
 }
 
 .unhighlighted {
@@ -54,14 +58,14 @@ p, a {
 }
 
 .corner {
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 nav {
     background-color: white;
     height: 49px;
     width: 100%;
-    top: 92%;
+    top: 96%;
     z-index: 500;
     position: absolute;
     overflow: auto;
@@ -84,7 +88,7 @@ nav {
 }
 
 .masthead {
-  line-height: 30px;
+  line-height: 33px;
   color: black;
   text-decoration: none;
   font-family: 'Comfortaa', cursive;
@@ -121,6 +125,7 @@ nav {
 ul.navbar-nav li {
     display: inline;
     margin: 0;
+/*    height: 20px;*/
     padding-top: 4px;
 }
 
@@ -137,7 +142,7 @@ ul.navbar-nav li a {
     border-radius: 25px;
     cursor: pointer;
     position: relative;
-    top: 10px;
+    top: 11px;
 }
 
 ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
@@ -174,8 +179,9 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    border-radius: 45px;
-    margin-bottom: 40%
+    border-radius: 10px;
+    margin-bottom: 40%;
+    background-color: white;
 }
 
 .content {
@@ -195,6 +201,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 .body-content h1 {
     font-family: 'Montserrat', sans-serif;
     margin-left: 5%;
+    margin-top: 6%;
 }
 
 
@@ -206,7 +213,7 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
 #wrapper-one {
     height: 700px;
-    background-color: #33ccff;
+/*    background-color: #33ccff;*/
     position: relative;
     margin-top: 193%;
 }
@@ -278,13 +285,13 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 }
 
 #wrapper-three {
-    background-color: #99ffcc;
+/*    background-color: #99ffcc;*/
     height: 700px;
 }
 
 #wrapper-four {
     height: 1000px;
-    background-color: #ccd9ff;
+/*    background-color: #ccd9ff;*/
 }
 
 .contact-form {
@@ -780,3 +787,58 @@ textarea {
 .clearfix::after {
     clear: both;
 }
+
+
+/* Eric Myer's Reset: */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
