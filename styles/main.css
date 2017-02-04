@@ -334,6 +334,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 /*    background-color: #e6e6e6;*/
 }
 
+.form-control:hover {
+    background-color: whitesmoke;
+}
+
 input {
     width: 100%;
 }
