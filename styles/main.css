@@ -5,75 +5,30 @@
 }
 
 html {
-    height: 100%; /* makes sure our HTML takes up 100% of the browser window */
-}
-
-body.landing {
-    background-color: black;
+    height: 100%; 
 }
 
 body {
-    min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
+    min-height: 100%;         
     text-decoration: none;
+    background-color: black;
  }
 
-p, a {
+.corner {
+    border-radius: 5px;
+}
+
+a, p {
     text-decoration: none;
 }
 
 #top {
     position: relative;
     height: 10px;
-/*    background-color: white;*/
+/*    background-color: white;  -- for testing */  
 }
 
-.unhighlighted {
-    color: black;
-    background-color: white;
-    -webkit-transition: color 1s ease-in-out;
-    -moz-transition: color 1s ease-in-out;
-    -o-transition: color 1s ease-in-out;
-    transition: color 1s ease-in-out;
-}
-
-.highlight {
-    color: white;
-    background-color: black;
-    -webkit-transition: color 1s ease-in-out;
-    -moz-transition: color 1s ease-in-out;
-    -o-transition: color 1s ease-in-out;
-    transition: color 1s ease-in-out;
-}
-
-/* Nav Elements */
-
-.corner {
-    border-radius: 5px;
-}
-
-.opacity {
-    opacity: 0.82;
-}
-
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-nav, .small-nav {
-    background-color: white;
-    height: 49px;
-    width: 100%;
-    top: 96%;
-    z-index: 500;
-    position: absolute;
-    overflow: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    opacity: 0.9;
-}
+/* Brand elements */
 
 #home-link {
     top: 6px;
@@ -89,7 +44,7 @@ nav, .small-nav {
     text-decoration: none;
 }
 
-.masthead {
+.brand {
     line-height: 33px;
     letter-spacing: -5px;
   color: black;
@@ -98,12 +53,29 @@ nav, .small-nav {
   font-size: 45px;
 }
 
-.masthead:hover {
+.brand:hover {
     color: #00ccff;
      -webkit-transition: color 0.1s ease-in-out;
     -moz-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
     transition: color 0.1s ease-in-out;
+}
+
+/* END Brand elements */
+ 
+/* Nav Elements */
+
+nav, .small-nav {
+    background-color: white;
+    height: 49px;
+    width: 100%;
+    top: 96%;
+    z-index: 500;
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    opacity: 0.9;
 }
 
 .navbar-nav {
@@ -118,6 +90,18 @@ nav, .small-nav {
     overflow: auto;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.fixed-nav {
+/* called once display scrolls to first content wrapper */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.opacity {
+    opacity: 0.82;
 }
 
 .col-xs-3 {
@@ -148,7 +132,7 @@ ul.navbar-nav li a {
     top: 11px;
 }
 
-ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
+ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     color: #00ccff;
      -webkit-transition: color 0.1s ease-in-out;
     -moz-transition: color 0.1s ease-in-out;
@@ -156,7 +140,26 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
     transition: color 0.1s ease-in-out;
 }
 
-/* .body-content elements */
+.unhighlighted {
+    color: black;
+    background-color: white;
+    -webkit-transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out;
+    -o-transition: color 1s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+
+.highlight {
+/* highlight class activated by scrolling script in app.js */
+    color: white;
+    background-color: black;
+    -webkit-transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out;
+    -o-transition: color 1s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+
+/* background video loop elements */
 
 .absolute-center {
     overflow: auto;
@@ -204,7 +207,6 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 
 .body-content h1 {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 5%;
     margin-top: 6%;
 }
 
@@ -212,12 +214,10 @@ ul.navbar-nav li a:hover, #hamburgerMenu li a:hover {
 .body-content p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
-    text-align: left;
 }
 
 #wrapper-one {
     height: 700px;
-/*    background-color: #33ccff;*/
     position: relative;
     margin-top: 193%;
 }
@@ -417,8 +417,9 @@ textarea {
         left: 0;
     }
     
-    .masthead {
+    .brand {
         line-height: 46px;
+        margin-left: 5px;
     }
     .hamburger-container {
         position: absolute;
@@ -460,24 +461,24 @@ textarea {
         transition: color 0.1s ease-in-out;
     }
 
-    #hamburgerMenu {
+    .hamburgerMenu {
         position: fixed;
-        background-color: #ffdd99;
+        background-color: white;
 /*        width: 11%;*/
 /*        right: -11%;*/
-        top: 15%;
-        height: 85%;
+        top: 49px;
+        height: 100%;
         z-index: 600;
         margin: auto;
     }
 
-    #hamburgerMenu ul {
+    .hamburgerMenu ul {
         margin: 0;
         margin-top: 55px;
         height: 94%;
         }
 
-    #hamburgerMenu li {
+    .hamburgerMenu li {
         position: relative;
         display: block;
         left: -35px;
@@ -485,25 +486,25 @@ textarea {
         width: 100%;
     }
 
-    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
-        margin-top: 40%;
+    .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
+        margin-top: 160%;
     }
 
-    #hamburgerMenu li a {
+    .hamburgerMenu li a {
         text-align: right;
         text-decoration: none;
         font-family: 'Fredoka One', cursive;
         font-size: 20px;
-        padding-top: 20%;
-        padding-bottom: 20%;
-        padding-left: 35%;
-        padding-right: 35%;
-        border-radius: 20px;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 5px;
     }
 
     .unhighlighted {
         color: black;
-        background-color: #ffdd99;
+        background-color: white;
         -webkit-transition: color 1s ease-in-out;
         -moz-transition: color 1s ease-in-out;
         -o-transition: color 1s ease-in-out;
@@ -518,13 +519,13 @@ textarea {
         -o-transition: color 1s ease-in-out;
         transition: color 1s ease-in-out;
     }
-
-    #wrapper-one {
-        margin-top: -55%;
+    
+    .wrapper {
+        opacity: 0.95;
     }
 
-    #wrapper-two {
-        background-color: #ffccd9;
+    #wrapper-one {
+        margin-top: 161%;
     }
 
     .fullscreen-video__video {
@@ -547,7 +548,7 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-    .masthead2 {
+    .brand {
           font-size: 45px;
           margin-left: 4%;
           margin-top: 3px;
@@ -561,22 +562,22 @@ textarea {
           width: 100%;
     }
 
-    #hamburgerMenu {
+    .hamburgerMenu {
 /*        right: -28%;*/
 /*        width: 28%;*/
     }
 
-    #hamburgerMenu ul {
+    .hamburgerMenu ul {
         margin: 0;
         margin-top: 20px;
         height: 94%;
     }
 
-    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+    .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
         margin-top: 60px;
     }
 
-    #hamburgerMenu li a {
+    .hamburgerMenu li a {
         font-size: 20px;
         padding-top: 35%;
         padding-bottom: 35%;
@@ -598,7 +599,7 @@ textarea {
         height: 20%;
     }
 
-    .masthead2 {
+    .brand {
           font-size: 35px;
           margin-top: 0%;
     }
@@ -609,24 +610,24 @@ textarea {
         height: 20%;
     }
 
-    #hamburgerMenu {
+    .hamburgerMenu {
 /*        width: 14%;*/
 /*        right: -14%;*/
         top: 20%;
         height: 80%;
     }
 
-    #hamburgerMenu ul {
+    .hamburgerMenu ul {
         margin: 0;
         margin-top: 20px;
         height: 94%;
     }
 
-    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+    .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
         margin-top: 15%;
     }
 
-    #hamburgerMenu li a {
+    .hamburgerMenu li a {
         font-size: 18px;
         text-align: center;
         padding-top: 5%;
@@ -645,7 +646,7 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
-    .masthead2 {
+    .brand {
         font-size: 45px;
         margin-left: 4%;
         margin-top: 3px;
@@ -659,29 +660,29 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
 
-    .masthead2 {
+    .brand {
         font-size: 48px;
         margin-top: -12px;
     }
 
-    #hamburgerMenu {
+    .hamburgerMenu {
 /*        width: 14%;*/
 /*        right: -14%;*/
         top: 20%;
         height: 80%;
     }
 
-    #hamburgerMenu ul {
+    .hamburgerMenu ul {
         margin: 0;
         margin-top: 15px;
         height: 94%;
     }
 
-    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+    .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
         margin-top: 20px;
     }
 
-    #hamburgerMenu li a {
+    .hamburgerMenu li a {
         font-size: 18px;
         text-align: center;
         padding-top: 12%;
@@ -707,28 +708,28 @@ textarea {
         height: 7.5%;
     }
 
-    .masthead2 {
+    .brand {
           margin-top: -2px;
     }
 
-    #hamburgerMenu {
+    .hamburgerMenu {
         top: 7.5%;
         height: 92.5%;
 /*        width: 14%;*/
 /*        right: -14%;*/
     }
 
-    #hamburgerMenu ul {
+    .hamburgerMenu ul {
         margin: 0;
         margin-top: 25px;
         height: 94%;
     }
 
-    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+    .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
         margin-top: 160%;
     }
 
-    #hamburgerMenu li a {
+    .hamburgerMenu li a {
         font-size: 20px;
         padding-top: 35%;
         padding-bottom: 35%;
@@ -748,7 +749,7 @@ textarea {
         height: 10%;
     }
 
-    .masthead2 {
+    .brand {
         text-align: left;
         font-size: 60px;
         margin-top: -3px;
@@ -760,24 +761,24 @@ textarea {
         height: 10%;
     }
 
-    #hamburgerMenu {
+    .hamburgerMenu {
 /*        width: 14%;*/
 /*        right: -14%;*/
         top: 10%;
         height: 90%;
     }
 
-    #hamburgerMenu ul {
+    .hamburgerMenu ul {
         margin: 0;
         margin-top: 25px;
         height: 94%;
     }
 
-    #hamburgerMenu li:nth-child(2), #hamburgerMenu li:nth-child(3), #hamburgerMenu li:nth-child(4) {
+    .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
         margin-top: 70%;
     }
 
-    #hamburgerMenu li a {
+    .hamburgerMenu li a {
         font-size: 30px;
         text-align: center;
         padding-top: 22%;

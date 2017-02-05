@@ -3,8 +3,9 @@
 
 // screen-specific moving-side-gutter calibrator: depending on the media used, the gutter will execute the JS animation function using data hidden as an attribute in HTML media-queried to that screen
 
-if ($(window).width() <= 1024) {
-    var wayOffset = ($('scrollStop').height());
+if ($(window).width() <= 798) {
+    var wayOffset = 300;
+//    var wayOffset = ($('scrollStop').height());
 } else {
     var wayOffset = 40;
 //    var wayOffset = ($('scrollStop').height());
@@ -146,21 +147,21 @@ $(window).load(function(){
 
     
         var menuMove = function() {
-            if ($(window).width() <= 1024) {
+            if ($(window).width() <= 798) {
                 var wwWidth = $(window).width();
                 $('.content').css("width", wwWidth);
-                var hbWidth = (wwWidth * 0.3);
-                $('#hamburgerMenu').css("width", hbWidth);
-                $('#hamburgerMenu').css("right", -(hbWidth));  
+                var hbWidth = (wwWidth * 0.13);
+                $('.hamburgerMenu').css("width", hbWidth);
+                $('.hamburgerMenu').css("right", -(hbWidth));  
 
                 $(".hamburger").click(function () {
-                    $("#hamburgerMenu").animate({right: '+=' + hbWidth});
+                    $(".hamburgerMenu").animate({right: '+=' + hbWidth});
                     $(".content").animate({width: '-=' + hbWidth});
                     $(".hamburger").hide();    
                 });
 
                 $(".x-out").click(function () {
-                    $("#hamburgerMenu").animate({right: '-=' + hbWidth});
+                    $(".hamburgerMenu").animate({right: '-=' + hbWidth});
                     $(".content").animate({width: '+=' + hbWidth});
                     $(".hamburger").show();
                 });
