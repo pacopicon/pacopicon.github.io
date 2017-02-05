@@ -395,7 +395,7 @@ textarea {
 /* Media Query large-view-port-view */
 
 /*@media (min-width: 1025px) {*/
-@media (min-width: 797px) {
+@media (min-width: 797.51px) {
 
     .small-view-port-view {
         display: none;
@@ -405,7 +405,7 @@ textarea {
 /* Media Query small-view-port-view */
 
 /*@media (max-width: 1024px) {*/
-@media (max-width: 798px) {
+@media (max-width: 797.49px) {
 
     .large-view-port-view {
         display: none;
@@ -427,7 +427,7 @@ textarea {
         margin: auto;
         width: 56px;
         height: 56px;
-        margin-right: 4.5px;
+        margin-right: 13.5px;
         top: 0; left: 0; bottom: 0; right: 0;
     }
 
@@ -474,10 +474,10 @@ textarea {
 
     .hamburgerMenu ul {
         margin: 0;
-        margin-top: 55px;
+        margin-top: 45px;
         height: 94%;
         }
-
+    
     .hamburgerMenu li {
         position: relative;
         display: block;
@@ -486,8 +486,8 @@ textarea {
         width: 100%;
     }
 
-    .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
-        margin-top: 160%;
+    .hamburgerMenu li:nth-child(1), .hamburgerMenu li:nth-child(2), .hamburgerMenu li:nth-child(3), .hamburgerMenu li:nth-child(4) {
+        height: 24.4%;
     }
 
     .hamburgerMenu li a {
