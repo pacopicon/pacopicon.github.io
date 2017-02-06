@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
 html {
     height: 100%; 
 }
@@ -415,11 +425,13 @@ textarea {
         position: fixed;
         top: 0;
         left: 0;
+        height: 4.5%;
     }
     
     .brand {
-        line-height: 46px;
-        margin-left: 5px;
+        line-height: 102%;
+        margin-left: 1%;
+        width: 230px;
     }
     .hamburger-container {
         position: absolute;
@@ -432,7 +444,7 @@ textarea {
     }
 
     .hamburger {
-        font-size: 50px;
+        font-size: 312.5%;
         color: black;
         z-index: 500;
         cursor: pointer;
@@ -448,7 +460,7 @@ textarea {
     }
 
     .x-out {
-        font-size: 50px;
+        font-size: 312.5%;
         color: black;
         cursor: pointer;
     }
@@ -466,7 +478,7 @@ textarea {
         background-color: white;
 /*        width: 11%;*/
 /*        right: -11%;*/
-        top: 49px;
+        top: 4.5%;
         height: 100%;
         z-index: 600;
         margin: auto;
@@ -474,7 +486,7 @@ textarea {
 
     .hamburgerMenu ul {
         margin: 0;
-        margin-top: 45px;
+        margin-top: 36.7%;
         height: 94%;
         }
     
@@ -494,7 +506,7 @@ textarea {
         text-align: right;
         text-decoration: none;
         font-family: 'Fredoka One', cursive;
-        font-size: 20px;
+        font-size: 140%;
         padding-top: 10%;
         padding-bottom: 10%;
         padding-left: 5%;
@@ -548,6 +560,7 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
+/*
     .brand {
           font-size: 45px;
           margin-left: 4%;
@@ -563,8 +576,8 @@ textarea {
     }
 
     .hamburgerMenu {
-/*        right: -28%;*/
-/*        width: 28%;*/
+        right: -28%;
+        width: 28%;
     }
 
     .hamburgerMenu ul {
@@ -583,6 +596,7 @@ textarea {
         padding-bottom: 35%;
         border-radius: 20px;
     }
+*/
 
 }
 
@@ -593,6 +607,7 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
+/*
     .small-nav {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -611,8 +626,8 @@ textarea {
     }
 
     .hamburgerMenu {
-/*        width: 14%;*/
-/*        right: -14%;*/
+        width: 14%;
+        right: -14%;
         top: 20%;
         height: 80%;
     }
@@ -637,6 +652,7 @@ textarea {
         margin-left: 10%;
         border-radius: 20px;
     }
+*/
 }
 
 /* ----------- iPhone 6+ portrait ----------- */
@@ -646,11 +662,13 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
 
+/*
     .brand {
         font-size: 45px;
         margin-left: 4%;
         margin-top: 3px;
     }
+*/
 }
 
 /* ----------- iPhone 6+ landscape ----------- */
@@ -660,14 +678,15 @@ textarea {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
 
+/*
     .brand {
         font-size: 48px;
         margin-top: -12px;
     }
 
     .hamburgerMenu {
-/*        width: 14%;*/
-/*        right: -14%;*/
+        width: 14%;
+        right: -14%;
         top: 20%;
         height: 80%;
     }
@@ -691,6 +710,7 @@ textarea {
         padding-right: 4%;
         border-radius: 20px;
     }
+*/
 }
 
 /* ----------- all iPads portrait ----------- */
@@ -700,6 +720,7 @@ textarea {
     and (max-device-width : 1024px)
     and (orientation : portrait) {
 
+/*
     .small-nav {
         height: 7.5%;
     }
@@ -715,8 +736,8 @@ textarea {
     .hamburgerMenu {
         top: 7.5%;
         height: 92.5%;
-/*        width: 14%;*/
-/*        right: -14%;*/
+        width: 14%;
+        right: -14%;
     }
 
     .hamburgerMenu ul {
@@ -735,6 +756,7 @@ textarea {
         padding-bottom: 35%;
         border-radius: 20px;
     }
+*/
 }
 
 /* ----------- all iPads landscape ----------- */
@@ -743,6 +765,7 @@ textarea {
     and (max-device-width : 1024px)
     and (orientation : landscape) {
 
+/*
   .small-nav {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -762,8 +785,8 @@ textarea {
     }
 
     .hamburgerMenu {
-/*        width: 14%;*/
-/*        right: -14%;*/
+        width: 14%;
+        right: -14%;
         top: 10%;
         height: 90%;
     }
@@ -791,18 +814,8 @@ textarea {
     .fullscreen-video__video {
         display: none;
     }
+*/
 }
-
-.clearfix::before,
-.clearfix::after {
-    content: " ";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
 
 /* Eric Myer's Reset: */
 
