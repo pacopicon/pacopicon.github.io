@@ -153,9 +153,10 @@ if ($(window).width() <= 797.49) {
             if ($(window).width() <= 798) {
                 var wWidth = $(window).width();
                 $('.content').css("width", wWidth);
-                var hbWidth = (wWidth * 0.13);
-                $('.hamburgerMenu').css("width", hbWidth);
-                $('.hamburgerMenu').css("right", -(hbWidth));  
+//                var hbWidth = (wWidth * 0.13);
+                var hbWidth = $('.hamburgerMenu').width();
+//                $('.hamburgerMenu').css("width", hbWidth);
+                $('.hamburgerMenu').css("right", ((hbWidth) * -1));  
 
                 $(".hamburger").click(function () {
                     $(".hamburgerMenu").animate({right: '+=' + hbWidth});
