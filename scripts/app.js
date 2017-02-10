@@ -1,5 +1,28 @@
 $(window).load(function(){ 
 //$(document).ready(function() {
+    
+$(function() {
+    $('.listoPicLink').hover(
+        (function() {
+            $(".listo p").css('color', '#33ccff');
+            $('#wrapper-two').css("opacity", 1);
+        }), 
+        (function() {
+            $(".listo p").css('color', 'black');
+            $('#wrapper-two').css("opacity", 0.82);
+        })
+    );
+    $('.BloccitPicLink').hover(
+        (function() {
+            $(".listo p").css('color', '#33ccff');
+            $('#wrapper-two').css("opacity", 1);
+        }), 
+        (function() {
+            $(".listo p").css('color', 'black');
+            $('#wrapper-two').css("opacity", 0.82);
+        })
+    );
+})();
 
 if ($(window).width() <= 797.49) {
     var wayOffset = 300;
