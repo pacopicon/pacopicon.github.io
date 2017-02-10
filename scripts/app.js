@@ -154,11 +154,9 @@ if ($(window).width() <= 797.49) {
         var menuMove = function() {
             if ($(window).width() <= 798) {
                 var wWidth = $(window).width();
-//                $('.content').css("width", wWidth);
-//                var hbWidth = (wWidth * 0.13);
                 var hbWidth = $('.hamburgerMenu').width();
-//                $('.hamburgerMenu').css("width", hbWidth);
                 $('.hamburgerMenu').css("right", ((hbWidth) * -1));  
+                
 
                 $(".hamburger").click(function () {
                     $(".hamburgerMenu").animate({right: '+=' + hbWidth});
@@ -175,10 +173,12 @@ if ($(window).width() <= 797.49) {
             }();
     
         $(window).on("orientationchange", function(event) {
+            location.reload();
             menuMove;
         });
 
         $(window).resize(function(){
+            location.reload();
             menuMove;
         });
     
