@@ -154,7 +154,7 @@ if ($(window).width() <= 797.49) {
         var menuMove = function() {
             if ($(window).width() <= 798) {
                 var wWidth = $(window).width();
-                $('.content').css("width", wWidth);
+//                $('.content').css("width", wWidth);
 //                var hbWidth = (wWidth * 0.13);
                 var hbWidth = $('.hamburgerMenu').width();
 //                $('.hamburgerMenu').css("width", hbWidth);

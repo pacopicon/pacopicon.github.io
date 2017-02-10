@@ -426,7 +426,7 @@ textarea {
         position: fixed;
         top: 0;
         left: 0;
-        height: 4.5%;
+/*        height: 4.5%;*/
     }
     
     .brand {
@@ -484,7 +484,7 @@ textarea {
 
     .hamburgerMenu ul {
         margin: 0;
-        margin-top: 36.7%;
+        margin-top: 30%;
         height: 94%;
         width: 100%
         }
@@ -512,10 +512,6 @@ textarea {
         padding-right: 5%;
         border-radius: 5px;
     }
-    
-    .linkTwo {
-        width: 10px;
-    }
 
     .unhighlighted {
         color: black;
@@ -540,7 +536,7 @@ textarea {
     }
 
     #wrapper-one {
-        margin-top: 161%;
+        margin-top: 200%;
     }
 
     .fullscreen-video__video {
