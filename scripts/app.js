@@ -8,6 +8,8 @@ if ($(window).width() <= 797.49) {
 //    $('.hamburgerMenu').css("min-width", hbWidth);
     var smNavMinHeight = $('.brand').css("font-size");
     $('.small-nav').css("min-height", smNavMinHeight);
+    var navHeight = $('.small-nav').height();
+    $('.hamburgerMenu').css("top", (navHeight + 0.2));
     
 
     

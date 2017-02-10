@@ -476,7 +476,7 @@ textarea {
         position: fixed;
         background-color: white;
         width: 105px;
-        top: 4.5%;
+        top: 50px;
         height: 100%;
         z-index: 600;
         margin: auto;
