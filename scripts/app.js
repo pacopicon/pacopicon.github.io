@@ -1,11 +1,15 @@
-//mobile nav left margin in gutter + extra 5 pixels wrapper
-// message text box size
-
-// screen-specific moving-side-gutter calibrator: depending on the media used, the gutter will execute the JS animation function using data hidden as an attribute in HTML media-queried to that screen
+$(window).load(function(){ 
+//$(document).ready(function() {
 
 if ($(window).width() <= 797.49) {
     var wayOffset = 300;
 //    var wayOffset = ($('scrollStop').height());
+//    var hbMinWidth = $('.hamburgerMenu ul').width();
+//    $('.hamburgerMenu').css("min-width", hbWidth);
+    var smNavMinHeight = $('.brand').css("font-size");
+    $('.small-nav').css("min-height", smNavMinHeight);
+
+    
 } else {
     var wayOffset = 40;
 //    var wayOffset = ($('scrollStop').height());
@@ -14,8 +18,6 @@ if ($(window).width() <= 797.49) {
 //    var wayOffset = (heightNum);
 }
 
-$(window).load(function(){ 
-//$(document).ready(function() {
     
     wrapperOneHighlight = new Waypoint({
         element: $('#wrapper-one'),
@@ -126,7 +128,7 @@ $(window).load(function(){
                         }, 1000);
                     return false;
                     }
-                }
+            }
         });
     });
     
@@ -148,9 +150,9 @@ $(window).load(function(){
     
         var menuMove = function() {
             if ($(window).width() <= 798) {
-                var wwWidth = $(window).width();
-                $('.content').css("width", wwWidth);
-                var hbWidth = (wwWidth * 0.13);
+                var wWidth = $(window).width();
+                $('.content').css("width", wWidth);
+                var hbWidth = (wWidth * 0.13);
                 $('.hamburgerMenu').css("width", hbWidth);
                 $('.hamburgerMenu').css("right", -(hbWidth));  
 

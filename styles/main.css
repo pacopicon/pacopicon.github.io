@@ -56,11 +56,12 @@ a, p {
 
 .brand {
     line-height: 33px;
+    height: 100%;
     letter-spacing: -5px;
-  color: black;
-  text-decoration: none;
-  font-family: 'Comfortaa', cursive;
-  font-size: 45px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 45px;
 }
 
 .brand:hover {
@@ -488,6 +489,7 @@ textarea {
         margin: 0;
         margin-top: 36.7%;
         height: 94%;
+        width: 100%
         }
     
     .hamburgerMenu li {
@@ -512,6 +514,10 @@ textarea {
         padding-left: 5%;
         padding-right: 5%;
         border-radius: 5px;
+    }
+    
+    .linkTwo {
+        width: 10px;
     }
 
     .unhighlighted {
