@@ -189,6 +189,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 
 .body-content {
     height: 500%;
+    width: 100%;
 }
 
 .wrapper {
@@ -204,10 +205,6 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     max-height: 2400px;
 }
 
-.content {
-    width: 100%;
-}
-
 .body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form, .link-div {
     color: black;
     margin-left: 5%;
@@ -220,7 +217,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 
 .body-content h1 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 6%;
+    padding-top: 6%;
 }
 
 
@@ -233,6 +230,22 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 /*    height: 700px;*/
     position: relative;
     margin-top: 193%;
+}
+
+.waypoint_border {
+    position: relative;
+    display: block;
+    text-align: right;
+    right: 45px;
+    font-size: 30px;
+    margin-top: 40%;
+}
+
+.waypoint_border a {
+    height: 5px;
+    width: 5px;
+    color: black;
+    text-decoration: none;
 }
 
 .timeline {
@@ -251,14 +264,6 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     opacity: 0.82;
 }
 
-.waypoint_border {
-    position: relative;
-    bottom: 0%;
-    text-align: right;
-    right: 45px;
-    font-size: 30px;
-}
-
 .link-div-listo, .link-div-bloccit {
     display: block;
     margin: auto;
@@ -267,7 +272,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 }
 
 .link-div-bloccit {
-    width: 170px;
+    width: 158px;
 }
 
 listo, bloccit {
@@ -321,11 +326,6 @@ listo, bloccit {
 
 .github:hover {
     color: mediumpurple;
-}
-
-.waypoint_border a {
-    color: black;
-    text-decoration: none;
 }
 
 #wrapper-three {
@@ -428,10 +428,6 @@ textarea {
     color: white;
 }
 */
-
-#topOne, #topTwo, #topThree, #topFour {
-    bottom: 10px;
-}
 
 /* Media Query large-view-port-view */
 
