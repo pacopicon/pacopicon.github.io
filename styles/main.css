@@ -266,22 +266,22 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     display: inline-block;
 }
 
-.listo p {
+.listo p, .bloccit p {
     text-decoration: none;
 /*    color: black;*/
     font-size: 30px;
     width: 80px;
 }
 
-.listo p:hover {
+.listo p:hover, .bloccit p:hover {
     color: mediumpurple;
 }
 
-.listo p:active {
+.listo p:active, .bloccit p:active {
     color: blue;
 }
 
-.listoPicLink {
+.listoPicLink, .bloccitPicLink {
     width: 90%;
     height: 90%;
     opacity: 1;
@@ -289,7 +289,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
-.listoPicLink:hover {
+.listoPicLink:hover, .bloccitPicLink:hover {
 /*    -webkit-filter: saturate(3); filter: saturate(3);*/
     -webkit-filter: grayscale(0%); filter: grayscale(0%);
 /*    -webkit-filter: contrast(160%); filter: contrast(160%);*/

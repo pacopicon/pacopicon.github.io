@@ -145,13 +145,13 @@ if ($(window).width() <= 797.49) {
                 $('#wrapper-two').css("opacity", 0.82);
             })
         );
-        $('.BloccitPicLink').hover(
+        $('.bloccitPicLink').hover(
             (function() {
-                $(".listo p").css('color', '#33ccff');
+                $(".bloccit p").css('color', '#33ccff');
                 $('#wrapper-two').css("opacity", 1);
             }), 
             (function() {
-                $(".listo p").css('color', 'black');
+                $(".bloccit p").css('color', 'black');
                 $('#wrapper-two').css("opacity", 0.82);
             })
         );
