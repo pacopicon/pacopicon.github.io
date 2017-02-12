@@ -208,7 +208,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     width: 100%;
 }
 
-.body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form {
+.body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form, .link-div {
     color: black;
     margin-left: 5%;
     margin-right: 5%;
@@ -253,28 +253,35 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 
 .waypoint_border {
     position: relative;
-    top: 96%;
+    bottom: 0%;
     text-align: right;
     right: 45px;
     font-size: 30px;
 }
 
-.listoContainer {
-    width: 300px;
-    height: 40px;
-    margin-left: 3.5%;
-    display: inline-block;
+.link-div-listo, .link-div-bloccit {
+    display: block;
+    margin: auto;
+    width: 125px;
+    height: 50px;
+}
+
+.link-div-bloccit {
+    width: 170px;
+}
+
+listo, bloccit {
+    width: 100%;
+    left: 0;
+    float: left;
 }
 
 .listo p, .bloccit p {
     text-decoration: none;
-/*    color: black;*/
-    font-size: 30px;
-    width: 80px;
-}
-
-.listo p:hover, .bloccit p:hover {
-    color: mediumpurple;
+    text-align: left;
+    font-size: 60px;
+    width: 100%;
+    margin-left: 0;
 }
 
 .listo p:active, .bloccit p:active {
