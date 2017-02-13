@@ -202,7 +202,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 /*    background-color: rgba(0,0,0,0.6);*/
     background-color: white;
     min-height: 500px;
-    max-height: 2400px;
+    max-height: 3400px;
 }
 
 .body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form, .link-div {
@@ -262,9 +262,10 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 #wrapper-two {
     background-color: white;
     opacity: 0.82;
+/*    height: 700%;*/
 }
 
-.link-div-listo, .link-div-bloccit {
+.link-div-listo, .link-div-bloccit, .link-div-bloc-jams {
     display: block;
     margin: auto;
     width: 125px;
@@ -275,13 +276,18 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     width: 158px;
 }
 
-listo, bloccit {
+.link-div-bloc-jams {
+    width: 210px;
+    height: 56px;
+}
+
+listo, bloccit, .blocJams {
     width: 100%;
     left: 0;
     float: left;
 }
 
-.listo p, .bloccit p {
+.listo p, .bloccit p, .blocJams p {
     text-decoration: none;
     text-align: left;
     font-size: 60px;
@@ -293,7 +299,7 @@ listo, bloccit {
     color: blue;
 }
 
-.listoPicLink, .bloccitPicLink {
+.listoPicLink, .bloccitPicLink, .blocJamsPicLink {
     width: 90%;
     height: 90%;
     opacity: 1;
@@ -301,7 +307,7 @@ listo, bloccit {
     -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
-.listoPicLink:hover, .bloccitPicLink:hover {
+.listoPicLink:hover, .bloccitPicLink:hover, .blocJamsPicLink:hover {
 /*    -webkit-filter: saturate(3); filter: saturate(3);*/
     -webkit-filter: grayscale(0%); filter: grayscale(0%);
 /*    -webkit-filter: contrast(160%); filter: contrast(160%);*/
