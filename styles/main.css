@@ -15,11 +15,11 @@
 }
 
 html {
-    height: 100%; 
+    height: 100%;
 }
 
 body {
-    min-height: 100%;         
+    min-height: 100%;
     text-decoration: none;
     background-color: black;
  }
@@ -35,7 +35,7 @@ a, p {
 #top {
     position: relative;
     height: 10px;
-/*    background-color: white;  -- for testing */  
+/*    background-color: white;  -- for testing */
 }
 
 /* Brand elements */
@@ -73,7 +73,7 @@ a, p {
 }
 
 /* END Brand elements */
- 
+
 /* Nav Elements */
 
 nav, .small-nav {
@@ -265,7 +265,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 /*    height: 700%;*/
 }
 
-.link-div-listo, .link-div-bloccit, .link-div-bloc-jams {
+.link-div-testtrakker, .link-div-listo, .link-div-bloccit, .link-div-bloc-jams {
     display: block;
     margin: auto;
     width: 125px;
@@ -281,13 +281,13 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     height: 56px;
 }
 
-listo, bloccit, .blocJams {
+.testtrakker, .listo, .bloccit, .blocJams {
     width: 100%;
     left: 0;
     float: left;
 }
 
-.listo p, .bloccit p, .blocJams p {
+.testtrakker p, .listo p, .bloccit p, .blocJams p {
     text-decoration: none;
     text-align: left;
     font-size: 60px;
@@ -299,7 +299,7 @@ listo, bloccit, .blocJams {
     color: blue;
 }
 
-.listoPicLink, .bloccitPicLink, .blocJamsPicLink {
+.testtrakkerPicLink, .listoPicLink, .bloccitPicLink, .blocJamsPicLink {
     width: 90%;
     height: 90%;
     opacity: 1;
@@ -307,7 +307,7 @@ listo, bloccit, .blocJams {
     -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
-.listoPicLink:hover, .bloccitPicLink:hover, .blocJamsPicLink:hover {
+.testtrakkerPicLink:hover, .listoPicLink:hover, .bloccitPicLink:hover, .blocJamsPicLink:hover {
 /*    -webkit-filter: saturate(3); filter: saturate(3);*/
     -webkit-filter: grayscale(0%); filter: grayscale(0%);
 /*    -webkit-filter: contrast(160%); filter: contrast(160%);*/
@@ -365,7 +365,7 @@ listo, bloccit, .blocJams {
     border-right: 20px;
     border-radius: 5px;
     border-style: none;
-    background-color: lightgray;    
+    background-color: lightgray;
 /*    background-color: #e6e6e6;*/
 }
 
@@ -409,7 +409,7 @@ textarea {
 
 .fa-paper-plane {
     border-style: none;
-    text-align: center; 
+    text-align: center;
 }
 
 .btn-send {
@@ -460,7 +460,7 @@ textarea {
         left: 0;
 /*        height: 4.5%;*/
     }
-    
+
     .brand {
         line-height: 46px;
         margin-left: 1%;
@@ -476,7 +476,7 @@ textarea {
         margin-right: 13.5px;
         top: 0; left: 0; bottom: 0; right: 0;
     }
-    
+
     .hamburger-container:active {
         background-color: transparent;
     }
@@ -525,7 +525,7 @@ textarea {
         height: 100%;
         width: 100%
         }
-    
+
     .menuItem {
         position: relative;
         display: block;
@@ -567,7 +567,7 @@ textarea {
         -o-transition: color 1s ease-in-out;
         transition: color 1s ease-in-out;
     }
-    
+
     .wrapper {
         opacity: 0.95;
     }
@@ -584,8 +584,8 @@ textarea {
 @media only screen
     and (min-device-width: 569px)
     and (max-device-width: 797px) {
-        
-        
+
+
 }
 
 /* ----------- iPhone 5 portrait ----------- */
@@ -855,7 +855,7 @@ textarea {
 
 /* Eric Myer's Reset: */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -871,8 +871,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -882,8 +882,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
- HTML5 display-role reset for older browsers 
-article, aside, details, figcaption, figure, 
+ HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
