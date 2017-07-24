@@ -262,7 +262,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 #wrapper-two {
     background-color: white;
     opacity: 0.82;
-/*    height: 700%;*/
+    min-height: 100%;
 }
 
 .link-div-testtrakker, .link-div-listo, .link-div-bloccit, .link-div-bloc-jams {
