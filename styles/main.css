@@ -202,7 +202,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 /*    background-color: rgba(0,0,0,0.6);*/
     background-color: white;
     min-height: 500px;
-    max-height: 3400px;
+/*    max-height: 3400px;*/
 }
 
 .body-content p, h1, h2, h3, .timeline, .share-buttons, .contact-form, .link-div {
@@ -265,11 +265,19 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     min-height: 100%;
 }
 
+#projects {
+    height: 100%;
+}
+
 .link-div-testtrakker, .link-div-listo, .link-div-bloccit, .link-div-bloc-jams {
     display: block;
     margin: auto;
     width: 125px;
     height: 50px;
+}
+
+.testtrakkerTitle {
+  width: 10em
 }
 
 .link-div-bloccit {
@@ -287,6 +295,9 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     float: left;
 }
 
+.testtrakker {
+    width: 245px
+}
 .testtrakker p, .listo p, .bloccit p, .blocJams p {
     text-decoration: none;
     text-align: left;
