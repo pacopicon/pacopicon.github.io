@@ -188,7 +188,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 /* body-content elements */
 
 .body-content {
-    height: 500%;
+    min-height: 500%;
     width: 100%;
 }
 
