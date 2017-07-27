@@ -272,12 +272,51 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
 .link-div-testtrakker, .link-div-listo, .link-div-bloccit, .link-div-bloc-jams {
     display: block;
     margin: auto;
+/*    margin: 0 auto;*/
     width: 125px;
     height: 50px;
 }
 
+.link-div-testtrakker {
+    width: 244px;
+}
+
+a.testtrakker {
+/*    left: 40em;*/
+/*    top: 0;*/
+/*    width: 16em;*/
+/*    left: 0;*/
+}
+
 .testtrakkerTitle {
-  width: 10em
+/*    padding-left: 1em;*/
+}
+
+.videoDesc p {
+    text-align: center;
+}
+
+.testTrakkerVideo {
+    position: relative;
+    display: block;
+    height: 640px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.innerDiv {
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.innerDiv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .link-div-bloccit {
@@ -310,7 +349,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     color: blue;
 }
 
-.testtrakkerPicLink, .listoPicLink, .bloccitPicLink, .blocJamsPicLink {
+.testtrakkerPicLink, .listoPicLink, .bloccitPicLink, .blocJamsPicLink, .testTrakkerVideo {
     width: 90%;
     height: 90%;
     opacity: 1;
@@ -318,7 +357,7 @@ ul.navbar-nav li a:hover, .hamburgerMenu li a:hover {
     -webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 
-.testtrakkerPicLink:hover, .listoPicLink:hover, .bloccitPicLink:hover, .blocJamsPicLink:hover {
+.testtrakkerPicLink:hover, .listoPicLink:hover, .bloccitPicLink:hover, .blocJamsPicLink:hover, .testTrakkerVideo:hover {
 /*    -webkit-filter: saturate(3); filter: saturate(3);*/
     -webkit-filter: grayscale(0%); filter: grayscale(0%);
 /*    -webkit-filter: contrast(160%); filter: contrast(160%);*/

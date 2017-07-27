@@ -1,5 +1,57 @@
 $(window).load(function(){ 
 //$(document).ready(function() {
+    
+var testTrakkerVideo;
+    
+function onYouTubeIframeAPIReady() {
+    vid = new YT.player('testTrakkerVid');
+    
+    console.log('Video API is loaded');
+    
+    vid.addEventListener("OnReady", "onYouTubePlayerReady");
+    vid.addEventListener("onStateChange", "onYouTubePlayerStateChange");
+}
+    
+function onYouTubePlayerReady() {
+    console.log('Video is ready to play');
+}
+    
+function onYouTubePlayerStateChange(event) {
+    console.log('Video state changed');
+}
+    
+function onPlayerStateChange(event) {
+  switch (event.data) {
+    case YT.PlayerState.UNSTARTED:
+      console.log('unstarted');
+      break;
+    case YT.PlayerState.ENDED:
+      console.log('ended');
+      (function() {
+        $(".listo p").css('color', 'black');
+        $('#wrapper-two').css("opacity", 0.82);
+        }
+      );
+      break;
+    case YT.PlayerState.PLAYING:
+      console.log('playing');
+      (function() {
+        $(".testtrakker p").css('color', '#33ccff');
+        $('#wrapper-two').css("opacity", 1);
+        }
+      ); 
+      break;
+    case YT.PlayerState.PAUSED:
+      console.log('paused');
+      break;
+    case YT.PlayerState.BUFFERING:
+      console.log('buffering');
+      break;
+    case YT.PlayerState.CUED:
+      console.log('video cued');
+      break;
+  }
+}
 
 if ($(window).width() <= 797.49) {
     var wayOffset = 300;
@@ -135,6 +187,26 @@ if ($(window).width() <= 797.49) {
             }
         });
         
+        $('.testtrakkerPicLink').hover(
+            (function() {
+                $(".testtrakker p").css('color', '#33ccff');
+                $('#wrapper-two').css("opacity", 1);
+            }), 
+            (function() {
+                $(".listo p").css('color', 'black');
+                $('#wrapper-two').css("opacity", 0.82);
+            })
+        );
+        $('.testTrakkerVideo').hover(
+            (function() {
+                $(".testtrakker p").css('color', '#33ccff');
+                $('#wrapper-two').css("opacity", 1);
+            }), 
+            (function() {
+                $(".listo p").css('color', 'black');
+                $('#wrapper-two').css("opacity", 0.82);
+            })
+        );
         $('.listoPicLink').hover(
             (function() {
                 $(".listo p").css('color', '#33ccff');
